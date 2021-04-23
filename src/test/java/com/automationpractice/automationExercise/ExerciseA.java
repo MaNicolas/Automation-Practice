@@ -1,3 +1,4 @@
+package com.automationpractice.automationExercise;
 import java.util.Map;
 
 import org.testng.annotations.Test;
