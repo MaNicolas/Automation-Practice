@@ -2,11 +2,11 @@ package com.automationpractice.pages;
 
 import java.util.List;
 
-import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.StaleElementReferenceException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -15,18 +15,21 @@ public class BasePageObject {
 
 	// Variables
 	protected WebDriver driver;
-	protected Logger log;
 
 	// Constructor
-	public BasePageObject(WebDriver driver, Logger log) {
+	public BasePageObject(WebDriver driver) {
 		this.driver = driver;
-		this.log = log;
 	}
 
 	// Methods
 	/** Open page with given URL **/
 	protected void openUrl(String url) {
 		driver.get(url);
+	}
+	
+	/** Get current URL **/
+	public String readUrl() {
+		return driver.getCurrentUrl();
 	}
 
 	/** Find element using given locator **/
@@ -51,11 +54,23 @@ public class BasePageObject {
 		waitForVisibilityOf(locator, seconds);
 		find(locator).sendKeys(text);
 	}
+	
+	/** Clear text in field **/
+	protected void clear(By locator, int seconds) {
+		waitForVisibilityOf(locator, seconds);
+		find(locator).clear();
+	}
 
 	/** Removes special characters from a string **/
 	protected String removeSpecialCharacters(String s) {
 		String newString = s.replaceAll("[^0-9.]", "");
 		return newString;
+	}
+	
+	/** Perform mouse hover over element **/
+	protected void hoverOverElement(WebElement element) {
+		Actions action = new Actions(driver);
+		action.moveToElement(element).build().perform();
 	}
 
 	/** Wait for a WebElement to be visible **/

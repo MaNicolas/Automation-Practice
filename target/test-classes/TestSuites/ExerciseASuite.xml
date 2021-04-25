@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="ExerciseASuite.xml" verbose="1" parallel="tests" thread-count="2">
+
+	<test name="AutomationExerciseUsingChrome">
+		<parameter name="browser" value="chrome" />
+		<classes>
+			<class name="com.automationpractice.automationExercise.ExerciseA" />
+		</classes>
+	</test>
+
+</suite>
