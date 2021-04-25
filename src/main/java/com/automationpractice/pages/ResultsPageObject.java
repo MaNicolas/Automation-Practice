@@ -6,6 +6,7 @@ import java.util.Random;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.testng.Reporter;
 
 public class ResultsPageObject extends HeaderPageObject {
 
@@ -24,6 +25,8 @@ public class ResultsPageObject extends HeaderPageObject {
 
 	// Methods
 	public PopupPageObject selectRandomItemFromTheList() {
+		Reporter.log("Selecting random item from the list.");
+		
 		//Get all items from the list
 		List<WebElement> items = findAll(itemsLocator);
 
@@ -42,11 +45,13 @@ public class ResultsPageObject extends HeaderPageObject {
 
 		//Click "Add to cart button"
 		randomItem.findElement(addToCartButtonLocator).click();
+		Reporter.log("Adding item into the cart.");
 		
 		return new PopupPageObject(driver);
 	}
 	
 	public float getItemPrice() {
+		Reporter.log("Item's price is: $" + itemPrice);
 		return itemPrice;
 	}
 }

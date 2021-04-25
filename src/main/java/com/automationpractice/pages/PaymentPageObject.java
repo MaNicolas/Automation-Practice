@@ -2,6 +2,7 @@ package com.automationpractice.pages;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.testng.Reporter;
 
 public class PaymentPageObject extends HeaderPageObject{
 
@@ -18,14 +19,17 @@ public class PaymentPageObject extends HeaderPageObject{
 	
 	//Methods
 	public void payByBankWire() {
+		Reporter.log("Paying by bank wire.");
 		click(bankWireLocator, 3);
 	}
 	
 	public void payByCheck() {
+		Reporter.log("Paying by check.");
 		click(checkLocator, 3);
 	}
 	
 	public void confirmOrder() {
+		Reporter.log("Confirming order.");
 		click(confirmOrderButtonLocator, 3);
 	}
 }

@@ -2,6 +2,7 @@ package com.automationpractice.pages;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.testng.Reporter;
 
 public class HeaderPageObject extends BasePageObject{
 
@@ -16,6 +17,7 @@ public class HeaderPageObject extends BasePageObject{
 	
 	//Methods
 	public ResultsPageObject searchForItem(String item) {
+		Reporter.log("Searching for item: '" + item + "'.");
 		type(item, searchBar, 3);
 		click(searchButton, 3);
 		return new ResultsPageObject(driver);

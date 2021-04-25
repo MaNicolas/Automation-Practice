@@ -2,6 +2,7 @@ package com.automationpractice.pages;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.testng.Reporter;
 
 public class CartPageObject extends HeaderPageObject{
 
@@ -21,6 +22,7 @@ public class CartPageObject extends HeaderPageObject{
 
 	//Methods
 	public LoginPageObject clickCheckoutButton() {
+		Reporter.log("Proceeding to checkout.");
 		click(checkoutLocator, 3);
 		return new LoginPageObject(driver);
 	}

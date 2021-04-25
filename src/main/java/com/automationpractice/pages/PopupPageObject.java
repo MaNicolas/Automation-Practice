@@ -2,6 +2,7 @@ package com.automationpractice.pages;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.testng.Reporter;
 
 public class PopupPageObject extends HeaderPageObject {
 
@@ -17,6 +18,7 @@ public class PopupPageObject extends HeaderPageObject {
 
 	// Methods
 	public CartPageObject clickCheckoutButton(){
+		Reporter.log("Going to cart.");
 		click(checkOutbuttonLocator, 3);
 		return new CartPageObject(driver);
 	}

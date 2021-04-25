@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>AutomationExerciseUsingChrome</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>1/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>1/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Fri Apr 23 16:33:50 CEST 2021</td>
+<td>Started on:</td><td>Sun Apr 25 19:47:03 CEST 2021</td>
 </tr>
-<tr><td>Total time:</td><td>9 seconds (9365 ms)</td>
+<tr><td>Total time:</td><td>46 seconds (46613 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,6 +67,93 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.automationpractice.automationExercise.ExerciseA.purchaseItemWithNewAccount()'><b>purchaseItemWithNewAccount</b><br>Test class: com.automationpractice.automationExercise.ExerciseA<br>Parameters: {firstName=nicolas, lastName=ma, zipCode=08001, password=secretPassword, address=8 baker street, phoneNumber=123456, testNumber=1, city=barcelona, aliasEmailAddress=anotherRandomEmail@gmail.com, itemToPurchase=shoes}<br/>
+<a href="#Output-940646032" onClick='toggleBox("Output-940646032", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-940646032" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-940646032">
+[Starting 'purchaseItemWithNewAccount' test]<br/>
+Starting test #1<br/>
+Opening page: http://automationpractice.com/index.php<br/>
+Page opened!<br/>
+[TEST: 'purchaseItemWithNewAccount' failed. Taking screenshot!]<br/>
+</div>
+</td>
+<td><div><pre>org.openqa.selenium.interactions.MoveTargetOutOfBoundsException: (1101, 1149) is out of bounds of viewport width (1920) and height (966)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;MSI&apos;, ip: &apos;192.168.1.40&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.6&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 87.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210318103112, moz:geckodriverVersion: 0.29.0, moz:headless: false, moz:processID: 16392, moz:profile: C:\Users\Nico\AppData\Local..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: e3297d67-75c0-40ba-af9f-3ebda5149e7a
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:618)
+	at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:639)
+	at com.automationpractice.pages.BasePageObject.hoverOverElement(BasePageObject.java:73)
+	at com.automationpractice.pages.ResultsPageObject.selectRandomItemFromTheList(ResultsPageObject.java:41)
+	at com.automationpractice.automationExercise.ExerciseA.purchaseItemWithNewAccount(ExerciseA.java:48)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+... Removed 20 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace940646032", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace940646032'><pre>org.openqa.selenium.interactions.MoveTargetOutOfBoundsException: (1101, 1149) is out of bounds of viewport width (1920) and height (966)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;MSI&apos;, ip: &apos;192.168.1.40&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.6&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 87.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210318103112, moz:geckodriverVersion: 0.29.0, moz:headless: false, moz:processID: 16392, moz:profile: C:\Users\Nico\AppData\Local..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: e3297d67-75c0-40ba-af9f-3ebda5149e7a
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:618)
+	at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:639)
+	at com.automationpractice.pages.BasePageObject.hoverOverElement(BasePageObject.java:73)
+	at com.automationpractice.pages.ResultsPageObject.selectRandomItemFromTheList(ResultsPageObject.java:41)
+	at com.automationpractice.automationExercise.ExerciseA.purchaseItemWithNewAccount(ExerciseA.java:48)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+</pre></div></td>
+<td>5</td>
+<td>com.automationpractice.automationExercise.ExerciseA@63070bab</td></tr>
+</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -75,18 +162,21 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.automationpractice.automationExercise.ExerciseA.exercise()'><b>exercise</b><br>Test class: com.automationpractice.automationExercise.ExerciseA<br/>
-<a href="#Output-1821465535" onClick='toggleBox("Output-1821465535", this, "Show output", "Hide output");'>Show output</a>
+<td title='com.automationpractice.automationExercise.ExerciseA.purchaseItemWithNewAccount()'><b>purchaseItemWithNewAccount</b><br>Test class: com.automationpractice.automationExercise.ExerciseA<br>Parameters: {firstName=nicolas, lastName=ma, zipCode=08001, password=secretPassword, address=8 baker street, phoneNumber=123456, testNumber=2, city=barcelona, aliasEmailAddress=anotherRandomEmail@gmail.com, itemToPurchase=blouse}<br/>
+<a href="#Output-1709593853" onClick='toggleBox("Output-1709593853", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1821465535" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1821465535">
+<a href="#Output-1709593853" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1709593853">
+[Starting 'purchaseItemWithNewAccount' test]<br/>
+Starting test #2<br/>
 Opening page: http://automationpractice.com/index.php<br/>
 Page opened!<br/>
+[TEST: 'purchaseItemWithNewAccount' passed.]<br/>
 </div>
 </td>
 <td></td>
-<td>7</td>
-<td>com.automationpractice.automationExercise.ExerciseA@10aa41f2</td></tr>
+<td>29</td>
+<td>com.automationpractice.automationExercise.ExerciseA@63070bab</td></tr>
 </table><p>
 </body>
 </html>

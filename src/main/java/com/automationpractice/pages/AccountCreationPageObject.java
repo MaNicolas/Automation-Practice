@@ -3,6 +3,7 @@ package com.automationpractice.pages;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.Select;
+import org.testng.Reporter;
 
 public class AccountCreationPageObject extends HeaderPageObject {
 
@@ -42,45 +43,47 @@ public class AccountCreationPageObject extends HeaderPageObject {
 		typePhoneNumber(phoneNumber);
 		typeAliasEmail(aliasEmail);
 	}
-	public void typeFirstname(String firstname) {
+	
+	private void typeFirstname(String firstname) {
 		type(firstname, firstNameLocator, 3);
 	}
 	
-	public void typeLastName(String lastName) {
+	private void typeLastName(String lastName) {
 		type(lastName, lastNameLocator, 3);
 	}
 	
-	public void createPassword(String password) {
+	private void createPassword(String password) {
 		type(password, passwordLocator, 3);
 	}
 
-	public void createAddress(String address) {
+	private void createAddress(String address) {
 		type(address, addressLocator, 3);
 	}
 	
-	public void createCity(String city) {
+	private void createCity(String city) {
 		type(city, cityLocator, 3);		
 	}
 	
-	public void selectState() {
+	private void selectState() {
 		Select stateDropdown = new Select(driver.findElement(By.id("id_state")));
 		stateDropdown.selectByIndex(1);
 	}
 	
-	public void typeZipCode(String zipCode) {
+	private void typeZipCode(String zipCode) {
 		type(zipCode, zipCodeLocator, 3);
 	}
 	
-	public void typePhoneNumber(String phoneNumber) {
+	private void typePhoneNumber(String phoneNumber) {
 		type(phoneNumber, phoneNumberLocator, 3);
 	}
 	
-	public void typeAliasEmail(String aliasEmail) {
+	private void typeAliasEmail(String aliasEmail) {
 		clear(aliasEmailLocator, 3);
 		type(aliasEmail, aliasEmailLocator, 3);
 	}
 	
 	public AddressPageObject clickRegisterButton() {
+		Reporter.log("Filling all information using data from CSV file.");
 		click(registerButtonLocator, 3);
 		return new AddressPageObject(driver);
 	}

@@ -15,17 +15,17 @@ public class TestListener implements ITestListener {
 	@Override
 	public void onTestStart(ITestResult result) {
 		this.testMethodName = result.getMethod().getMethodName();
-		Reporter.log("[Starting " + testMethodName + "]");
+		Reporter.log("[Starting '" + testMethodName + "' test]");
 	}
 
 	@Override
 	public void onTestSuccess(ITestResult result) {
-		Reporter.log("[TEST " + testMethodName + " passed.]");
+		Reporter.log("[RESULT: '" + testMethodName + "' has successfully passed.]");
 	}
 
 	@Override
 	public void onTestFailure(ITestResult result) {
-		Reporter.log("[TEST " + testMethodName + " failed.]");
+		Reporter.log("[RESULT: '" + testMethodName + "' has failed. Taking screenshot!]");
 	}
 
 	@Override
@@ -41,11 +41,11 @@ public class TestListener implements ITestListener {
 	@Override
 	public void onStart(ITestContext context) {
 		this.testName = context.getCurrentXmlTest().getName();
-		Reporter.log("[TEST " + testName + " STARTED]");
+		Reporter.log("[TEST '" + testName + "' STARTED]");
 	}
 
 	@Override
 	public void onFinish(ITestContext context) {
-		Reporter.log("[ALL " + testName + " FINISHED]");
+		Reporter.log("[ALL '" + testName + "' FINISHED]");
 	}
 }

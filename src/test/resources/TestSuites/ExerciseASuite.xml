@@ -2,11 +2,18 @@
 
 <suite name="ExerciseASuite.xml" verbose="1" parallel="tests" thread-count="2">
 
-	<test name="AutomationExerciseUsingChrome">
+	<test name="ExerciseAUsingChrome">
 		<parameter name="browser" value="chrome" />
 		<classes>
 			<class name="com.automationpractice.automationExercise.ExerciseA" />
 		</classes>
 	</test>
+	
+<!-- 	<test name="ExerciseAUsingFirefox"> -->
+<!-- 		<parameter name="browser" value="firefox" /> -->
+<!-- 		<classes> -->
+<!-- 			<class name="com.automationpractice.automationExercise.ExerciseA" /> -->
+<!-- 		</classes> -->
+<!-- 	</test> -->
 
 </suite>

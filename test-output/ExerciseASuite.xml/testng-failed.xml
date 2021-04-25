@@ -1,15 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite thread-count="2" parallel="tests" name="Failed suite [ExerciseASuite.xml]">
-  <test thread-count="2" parallel="tests" name="AutomationExerciseUsingChrome(failed)">
-    <parameter name="browser" value="chrome"/>
+  <test thread-count="2" parallel="tests" name="ExerciseAUsingFirefox(failed)">
+    <parameter name="browser" value="firefox"/>
     <classes>
       <class name="com.automationpractice.automationExercise.ExerciseA">
         <methods>
+          <include name="purchaseItemWithNewAccount" invocation-numbers="0"/>
           <include name="setup"/>
-          <include name="exercise"/>
+          <include name="tearDown"/>
+          <include name="takeScreenshot"/>
         </methods>
       </class> <!-- com.automationpractice.automationExercise.ExerciseA -->
     </classes>
-  </test> <!-- AutomationExerciseUsingChrome(failed) -->
+  </test> <!-- ExerciseAUsingFirefox(failed) -->
 </suite> <!-- Failed suite [ExerciseASuite.xml] -->

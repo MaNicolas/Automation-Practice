@@ -2,6 +2,7 @@ package com.automationpractice.pages;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.testng.Reporter;
 
 public class LoginPageObject extends HeaderPageObject{
 
@@ -15,7 +16,8 @@ public class LoginPageObject extends HeaderPageObject{
 	}
 	
 	//Methods
-	public AccountCreationPageObject createNewAccount(String emailAddress) {
+	public AccountCreationPageObject createAnAccount(String emailAddress) {
+		Reporter.log("Creating new account using random Email address: " + emailAddress);
 		type(emailAddress, createEmailAddressLocator, 5);
 		click(createAccountButtonLocator, 3);
 		return new AccountCreationPageObject(driver);

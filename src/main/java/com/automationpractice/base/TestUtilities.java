@@ -11,6 +11,7 @@ import org.apache.commons.text.RandomStringGenerator;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.testng.ITestResult;
+import org.testng.Reporter;
 import org.testng.annotations.AfterMethod;
 
 public class TestUtilities extends BaseTest {
@@ -73,6 +74,7 @@ public class TestUtilities extends BaseTest {
 					+ " " + ".png";
 			try {
 				FileUtils.copyFile(scrFile, new File(path));
+				Reporter.log("Screenshot available at " + path);
 			} catch (IOException e) {
 				e.printStackTrace();
 			}

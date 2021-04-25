@@ -21,7 +21,7 @@ import com.automationpractice.pages.WelcomePageObject;
 public class ExerciseA extends TestUtilities {
 
 	@Test(invocationCount = 1, dataProvider = "csvReader", dataProviderClass = CsvDataProviders.class)
-	public void exercise(Map<String, String> testData) {
+	public void purchaseItemWithNewAccount(Map<String, String> testData) {
 
 		// Data
 		String testNumber = testData.get("testNumber");
@@ -35,7 +35,7 @@ public class ExerciseA extends TestUtilities {
 		String phoneNumber = testData.get("phoneNumber");
 		String aliasEmailAddress = testData.get("aliasEmailAddress");
 		
-		Reporter.log("Starting test #" + testNumber);
+		Reporter.log("Starting test #" + testNumber + " from CSV file.");
 				
 		// Go to page http://automationpractice.com/index.php
 		WelcomePageObject welcomePage = new WelcomePageObject(driver);
@@ -53,18 +53,24 @@ public class ExerciseA extends TestUtilities {
 		// Click "proceed to checkout" (go to cart)
 		CartPageObject cartPage = popupPage.clickCheckoutButton();
 
-		// In cart, assert total number of item and total price (you can add shipping are correct
+		// In cart, assert total number of item and total price are correct
 		// Check that url is "http://automationpractice.com/index.php?controller=order"
+		Reporter.log("Checking if total number of item and total price are correct in cart");
 		Assert.assertEquals(cartPage.readUrl(), cartPage.getUrl());
+		
 		Assert.assertEquals(cartPage.getTotalQuantity(), 1);
-		Assert.assertEquals(cartPage.getTotalPrice(), 
-				cartPage.getShippingCost() + resultsPage.getItemPrice());
+		Reporter.log("There is " + cartPage.getTotalQuantity() + " item in cart.");
+		
+		Assert.assertEquals(cartPage.getTotalPrice(), cartPage.getShippingCost() + resultsPage.getItemPrice());
+		Reporter.log("Total price with shiping is $" + cartPage.getTotalPrice() + ".");
+		
+		Reporter.log("Total number of item and total price are correct!");
 		
 		// Click proceed to checkout
 		LoginPageObject loginPage = cartPage.clickCheckoutButton();
 
 		// Generate random email address and click "Create an account" button
-		AccountCreationPageObject accountCreationPage = loginPage.createNewAccount(randomEmail());
+		AccountCreationPageObject accountCreationPage = loginPage.createAnAccount(randomEmail());
 		
 		// Create new account
 		accountCreationPage.createNewAccount(
@@ -78,7 +84,7 @@ public class ExerciseA extends TestUtilities {
 				aliasEmailAddress);
 		AddressPageObject addressPage = accountCreationPage.clickRegisterButton();
 		
-		// Click checkout button
+		// Checking user's information are correct
 		ShippingPageObject shippingPage = addressPage.clickCheckoutButton();
 		
 		// Tick "Terms of service" checkBox if necessary and click checkout button
