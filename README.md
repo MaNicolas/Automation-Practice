@@ -6,7 +6,7 @@ Here's a test I created using Selenium webdriver and Java. I am using a Maven pr
 The design pattern is Page Object Model.
 The scenario is driven by a data-provider framework (CSV file).  Test inputs are therefore stored separately from the test. So the test cases can be executed with different data without changing the test itself.
 
-I will be testing the website “http://automationpractice.com/index.php” following a this steps to reproduce:
+I will be testing the website “http://automationpractice.com/index.php” following this steps to reproduce:
 1. Go to http://automationpractice.com/index.php
 2. Search for an item (taken from the CSV file)
 3. Select random item from all available items
