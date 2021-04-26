@@ -51,7 +51,6 @@ public class ResultsPageObject extends HeaderPageObject {
 	}
 	
 	public float getItemPrice() {
-		Reporter.log("Item's price is: $" + itemPrice);
 		return itemPrice;
 	}
 }

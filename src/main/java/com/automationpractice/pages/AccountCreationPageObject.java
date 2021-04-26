@@ -66,7 +66,7 @@ public class AccountCreationPageObject extends HeaderPageObject {
 	
 	private void selectState() {
 		Select stateDropdown = new Select(driver.findElement(By.id("id_state")));
-		stateDropdown.selectByIndex(1);
+		stateDropdown.selectByIndex(19);
 	}
 	
 	private void typeZipCode(String zipCode) {

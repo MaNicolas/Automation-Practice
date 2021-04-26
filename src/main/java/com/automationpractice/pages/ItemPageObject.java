@@ -10,7 +10,6 @@ public class ItemPageObject extends HeaderPageObject {
 	
 	//Lcoators
 	private By priceLocator = By.id("our_price_display");
-	private By quantityLocator = By.id("quantity_wanted");
 	private By addToCartButtonLocator = By.id("add_to_cart");
 	
 	//Constructor

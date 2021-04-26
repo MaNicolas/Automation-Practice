@@ -34,7 +34,7 @@ public class BaseTest {
 		
 		this.testSuiteName = ctx.getSuite().getName();
 		this.testName = testName;
-		this.testMethodName = method.getName();		
+		this.testMethodName = method.getName();
 	}
 
 	@AfterMethod(alwaysRun = true)

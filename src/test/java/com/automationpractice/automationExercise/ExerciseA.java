@@ -47,23 +47,16 @@ public class ExerciseA extends TestUtilities {
 		// Select random item from the list
 		PopupPageObject popupPage = resultsPage.selectRandomItemFromTheList();
 
-		// Assert pop up is there
-		//Assert.assertEquals(popupPage.checkConfirmationMessage(), "Product successfully added to your shopping cart");
-
 		// Click "proceed to checkout" (go to cart)
-		CartPageObject cartPage = popupPage.clickCheckoutButton();
+		CartPageObject cartPage = popupPage.goToCart();
 
-		// In cart, assert total number of item and total price are correct
-		// Check that url is "http://automationpractice.com/index.php?controller=order"
-		Reporter.log("Checking if total number of item and total price are correct in cart");
+		// Check that the user successfully gets to the cart
 		Assert.assertEquals(cartPage.readUrl(), cartPage.getUrl());
 		
+		// In cart, assert total number of item and total price are correct
+		Reporter.log("Checking if total number of item and total price are correct in cart.");
 		Assert.assertEquals(cartPage.getTotalQuantity(), 1);
-		Reporter.log("There is " + cartPage.getTotalQuantity() + " item in cart.");
-		
 		Assert.assertEquals(cartPage.getTotalPrice(), cartPage.getShippingCost() + resultsPage.getItemPrice());
-		Reporter.log("Total price with shiping is $" + cartPage.getTotalPrice() + ".");
-		
 		Reporter.log("Total number of item and total price are correct!");
 		
 		// Click proceed to checkout
@@ -84,17 +77,32 @@ public class ExerciseA extends TestUtilities {
 				aliasEmailAddress);
 		AddressPageObject addressPage = accountCreationPage.clickRegisterButton();
 		
-		// Checking user's information are correct
+		// Checking delivery address info
+		Reporter.log("Checking if delivery details are correct.");
+		Assert.assertEquals(addressPage.getcompleteName(), firstName + " " + lastName);
+		Assert.assertEquals(addressPage.getDeliveryAddress(), address);
+		Assert.assertEquals(addressPage.getPhoneNumber(), phoneNumber);
+		Reporter.log("All delivery information are correct.");
+		
 		ShippingPageObject shippingPage = addressPage.clickCheckoutButton();
 		
-		// Tick "Terms of service" checkBox if necessary and click checkout button
+		// Check "Terms of service" checkBox (if necessary) and click checkout button
 		shippingPage.selectCheckBox();
 		PaymentPageObject paymentPage = shippingPage.clickCheckoutButton();
+		
+		// Checking that quantity and total price remained the same after test creation
+		Reporter.log("Checking quantity and total price are still correct.");
+		Assert.assertEquals(paymentPage.getTotalQuantity(), 1);		
+		Assert.assertEquals(paymentPage.getTotalPrice(), cartPage.getShippingCost() + resultsPage.getItemPrice());
+		Reporter.log("Quantity and total price still correct.");
 		
 		// Click on "Pay by bank wire"
 		paymentPage.payByBankWire();
 		
 		// Confirm order
-		paymentPage.confirmOrder();		
+		paymentPage.confirmOrder();	
+		
+		// Checking that order is complete
+		Assert.assertTrue(paymentPage.checkOrderComplete());
 	}
 }

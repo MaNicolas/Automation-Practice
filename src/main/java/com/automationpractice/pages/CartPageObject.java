@@ -34,6 +34,7 @@ public class CartPageObject extends HeaderPageObject{
 	public int getTotalQuantity() {
 		String text = find(quantityLocator).getText();
 		int totalQuantity = Integer.valueOf(removeSpecialCharacters(text));
+		Reporter.log("There is " + totalQuantity + " item in cart.");
 		return totalQuantity;
 	}
 	
@@ -44,6 +45,7 @@ public class CartPageObject extends HeaderPageObject{
 	public float getTotalPrice() {
 		String text = find(totalPriceLocator).getText();
 		float totalPrice = Float.valueOf(removeSpecialCharacters(text));
+		Reporter.log("Total price including shipping is $" + totalPrice);
 		return totalPrice;
 	}
 }

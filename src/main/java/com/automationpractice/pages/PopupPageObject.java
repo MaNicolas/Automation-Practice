@@ -7,8 +7,6 @@ import org.testng.Reporter;
 public class PopupPageObject extends HeaderPageObject {
 
 	// Variables
-	private By confirmationMessageLocator = By.xpath("//i[@class='icon-ok']/following-sibling::text()[contains(., 'Product')]");
-	private By quantityLocator = By.id("layer_cart_product_quantity");
 	private By checkOutbuttonLocator = By.xpath("//a[@title='Proceed to checkout']");
 
 	// Constructor
@@ -17,15 +15,9 @@ public class PopupPageObject extends HeaderPageObject {
 	}
 
 	// Methods
-	public CartPageObject clickCheckoutButton(){
+	public CartPageObject goToCart(){
 		Reporter.log("Going to cart.");
 		click(checkOutbuttonLocator, 3);
 		return new CartPageObject(driver);
-	}
-	
-	public String checkConfirmationMessage() {
-		waitForVisibilityOf(confirmationMessageLocator, 5);
-		System.out.println(find(confirmationMessageLocator).getText());
-		return find(confirmationMessageLocator).getText();
 	}
 }
