@@ -5,7 +5,7 @@
     <classes>
       <class name="com.automationpractice.automationExercise.ExerciseA">
         <methods>
-          <include name="purchaseItemWithNewAccount" invocation-numbers="0"/>
+          <include name="purchaseItemWithNewAccount"/>
           <include name="setup"/>
           <include name="tearDown"/>
           <include name="takeScreenshot"/>

@@ -21,7 +21,7 @@ import com.automationpractice.pages.WelcomePageObject;
 public class ExerciseA extends TestUtilities {
 
 	@Test(invocationCount = 1, dataProvider = "csvReader", dataProviderClass = CsvDataProviders.class)
-	public void purchaseItemWithNewAccount(Map<String, String> testData) {
+	public void purchaseItem(Map<String, String> testData) {
 
 		// Data
 		String testNumber = testData.get("testNumber");

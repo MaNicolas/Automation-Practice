@@ -1,3 +1,4 @@
 testNumber,itemToPurchase,firstName,lastName,password,address,city,zipCode,phoneNumber,aliasEmailAddress
 1,dress,nicolas,ma,secretPassword,8 baker street,barcelona,08001,123456,anotherRandomEmail@gmail.com
 2,blouse,nicolas,ma,secretPassword,8 baker street,barcelona,08001,123456,anotherRandomEmail@gmail.com
+3,shoes,john,smith,secretPassword,25 rambla cataluna,Barcelona,08022,425684,aliasemail@gmail.com
