@@ -35,6 +35,9 @@ public class ResultsPageObject extends HeaderPageObject {
 		int randomNumber = random.nextInt(items.size());
 		WebElement randomItem = items.get(randomNumber);
 		
+		// Scroll the page down (Firefox needs a scroll down to select an item which is not visible)
+		scrollToElement(randomItem);
+		
 		//Store its price for later assertion
 		String text = randomItem.findElement(priceItemLocator).getText();		
 		text = removeSpecialCharacters(text);

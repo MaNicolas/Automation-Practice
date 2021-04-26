@@ -42,8 +42,8 @@ public class ExerciseA extends TestUtilities {
 		welcomePage.openPage();
 
 		// Search for item
-		ResultsPageObject resultsPage = welcomePage.searchForItem(itemToPurchase);
-
+		ResultsPageObject resultsPage = welcomePage.searchForItem(itemToPurchase);		
+		
 		// Select random item from the list
 		PopupPageObject popupPage = resultsPage.selectRandomItemFromTheList();
 

@@ -3,6 +3,7 @@ package com.automationpractice.pages;
 import java.util.List;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.StaleElementReferenceException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -71,6 +72,12 @@ public class BasePageObject {
 	protected void hoverOverElement(WebElement element) {
 		Actions action = new Actions(driver);
 		action.moveToElement(element).build().perform();
+	}
+	
+	/** Perform scroll to the bottom */
+	public void scrollToElement(WebElement element) {
+		JavascriptExecutor jsExecutor = (JavascriptExecutor) driver;
+		jsExecutor.executeScript("arguments[0].scrollIntoView();", element);
 	}
 
 	/** Wait for a WebElement to be visible **/

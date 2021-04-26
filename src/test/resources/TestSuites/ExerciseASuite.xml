@@ -9,11 +9,11 @@
 		</classes>
 	</test>
 	
-<!-- 	<test name="ExerciseAUsingFirefox"> -->
-<!-- 		<parameter name="browser" value="firefox" /> -->
-<!-- 		<classes> -->
-<!-- 			<class name="com.automationpractice.automationExercise.ExerciseA" /> -->
-<!-- 		</classes> -->
-<!-- 	</test> -->
+	<test name="ExerciseAUsingFirefox">
+		<parameter name="browser" value="firefox" />
+		<classes>
+			<class name="com.automationpractice.automationExercise.ExerciseA" />
+		</classes>
+	</test>
 
 </suite>
