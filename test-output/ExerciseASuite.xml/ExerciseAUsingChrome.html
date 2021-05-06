@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>ExerciseAUsingChrome</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>3/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>2/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Mon Apr 26 17:37:30 CEST 2021</td>
+<td>Started on:</td><td>Thu May 06 18:01:14 CEST 2021</td>
 </tr>
-<tr><td>Total time:</td><td>88 seconds (88022 ms)</td>
+<tr><td>Total time:</td><td>89 seconds (89578 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,8 +67,8 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-passed'>
-<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td width="30%"><b>Exception</b></td>
 <td width="10%"><b>Time (seconds)</b></td>
@@ -76,10 +76,10 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='com.automationpractice.automationExercise.ExerciseA.purchaseItem()'><b>purchaseItem</b><br>Test class: com.automationpractice.automationExercise.ExerciseA<br>Parameters: {firstName=nicolas, lastName=ma, zipCode=08001, password=secretPassword, address=8 baker street, phoneNumber=123456, testNumber=1, city=barcelona, aliasEmailAddress=anotherRandomEmail@gmail.com, itemToPurchase=dress}<br/>
-<a href="#Output-518361157" onClick='toggleBox("Output-518361157", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-1963811715" onClick='toggleBox("Output-1963811715", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-518361157" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-518361157">
+<a href="#Output-1963811715" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1963811715">
 [Starting 'purchaseItem' test]<br/>
 Starting test #1 from CSV file.<br/>
 Opening page: http://automationpractice.com/index.php<br/>
@@ -90,34 +90,127 @@ Adding item into the cart.<br/>
 Going to cart.<br/>
 Checking if total number of item and total price are correct in cart.<br/>
 There is 1 item in cart.<br/>
-Total price including shipping is $32.5<br/>
+Total price including shipping is $29.0<br/>
 Total number of item and total price are correct!<br/>
 Proceeding to checkout.<br/>
-Creating new account using random Email address: vrbxrawo@gmail.com<br/>
-Filling all information using data from CSV file.<br/>
-Checking if delivery details are correct.<br/>
-All delivery information are correct.<br/>
-Accepting terms of services.<br/>
-Proceeding to checkout.<br/>
-Checking quantity and total price are still correct.<br/>
-There is 1 item in cart.<br/>
-Total price including shipping is $32.5.<br/>
-Quantity and total price still correct.<br/>
-Paying by bank wire.<br/>
-Confirming order.<br/>
-Order is complete.<br/>
-[RESULT: 'purchaseItem' has successfully passed.]<br/>
+Creating new account using random Email address: exnruekz@gmail.com<br/>
+[RESULT: 'purchaseItem' has failed. Taking screenshot!]<br/>
 </div>
 </td>
-<td></td>
-<td>33</td>
-<td>com.automationpractice.automationExercise.ExerciseA@63070bab</td></tr>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.id: customer_firstname (tried for 3 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at com.automationpractice.pages.BasePageObject.waitFor(BasePageObject.java:100)
+	at com.automationpractice.pages.BasePageObject.waitForVisibilityOf(BasePageObject.java:88)
+	at com.automationpractice.pages.BasePageObject.type(BasePageObject.java:55)
+	at com.automationpractice.pages.AccountCreationPageObject.typeFirstname(AccountCreationPageObject.java:48)
+	at com.automationpractice.pages.AccountCreationPageObject.createNewAccount(AccountCreationPageObject.java:36)
+	at com.automationpractice.automationExercise.ExerciseA.purchaseItem(ExerciseA.java:69)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#customer_firstname&quot;}
+  (Session info: chrome=90.0.4430.93)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;MSI&apos;, ip: &apos;192.168.1.40&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.6&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.93, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\Nico\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:52714}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 92dd1ed3e72233a3d2dfb77d9b65e10d
+*** Element info: {Using=id, value=customer_firstname}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 29 more
+... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1963811715", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1963811715'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.id: customer_firstname (tried for 3 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at com.automationpractice.pages.BasePageObject.waitFor(BasePageObject.java:100)
+	at com.automationpractice.pages.BasePageObject.waitForVisibilityOf(BasePageObject.java:88)
+	at com.automationpractice.pages.BasePageObject.type(BasePageObject.java:55)
+	at com.automationpractice.pages.AccountCreationPageObject.typeFirstname(AccountCreationPageObject.java:48)
+	at com.automationpractice.pages.AccountCreationPageObject.createNewAccount(AccountCreationPageObject.java:36)
+	at com.automationpractice.automationExercise.ExerciseA.purchaseItem(ExerciseA.java:69)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#customer_firstname&quot;}
+  (Session info: chrome=90.0.4430.93)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;MSI&apos;, ip: &apos;192.168.1.40&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.6&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.93, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\Nico\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:52714}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 92dd1ed3e72233a3d2dfb77d9b65e10d
+*** Element info: {Using=id, value=customer_firstname}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 29 more
+</pre></div></td>
+<td>28</td>
+<td>com.automationpractice.automationExercise.ExerciseA@5fd4f8f5</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
 <tr>
 <td title='com.automationpractice.automationExercise.ExerciseA.purchaseItem()'><b>purchaseItem</b><br>Test class: com.automationpractice.automationExercise.ExerciseA<br>Parameters: {firstName=nicolas, lastName=ma, zipCode=08001, password=secretPassword, address=8 baker street, phoneNumber=123456, testNumber=2, city=barcelona, aliasEmailAddress=anotherRandomEmail@gmail.com, itemToPurchase=blouse}<br/>
-<a href="#Output-1739903909" onClick='toggleBox("Output-1739903909", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-164275856" onClick='toggleBox("Output-164275856", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1739903909" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1739903909">
+<a href="#Output-164275856" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-164275856">
 [Starting 'purchaseItem' test]<br/>
 Starting test #2 from CSV file.<br/>
 Opening page: http://automationpractice.com/index.php<br/>
@@ -131,7 +224,7 @@ There is 1 item in cart.<br/>
 Total price including shipping is $29.0<br/>
 Total number of item and total price are correct!<br/>
 Proceeding to checkout.<br/>
-Creating new account using random Email address: ghsazeuo@gmail.com<br/>
+Creating new account using random Email address: qhngsmso@gmail.com<br/>
 Filling all information using data from CSV file.<br/>
 Checking if delivery details are correct.<br/>
 All delivery information are correct.<br/>
@@ -148,14 +241,14 @@ Order is complete.<br/>
 </div>
 </td>
 <td></td>
-<td>25</td>
-<td>com.automationpractice.automationExercise.ExerciseA@63070bab</td></tr>
+<td>26</td>
+<td>com.automationpractice.automationExercise.ExerciseA@5fd4f8f5</td></tr>
 <tr>
 <td title='com.automationpractice.automationExercise.ExerciseA.purchaseItem()'><b>purchaseItem</b><br>Test class: com.automationpractice.automationExercise.ExerciseA<br>Parameters: {firstName=john, lastName=smith, zipCode=08022, password=secretPassword, address=25 rambla cataluna, phoneNumber=425684, testNumber=3, city=Barcelona, aliasEmailAddress=aliasemail@gmail.com, itemToPurchase=shoes}<br/>
-<a href="#Output-1185593418" onClick='toggleBox("Output-1185593418", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-552729740" onClick='toggleBox("Output-552729740", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1185593418" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1185593418">
+<a href="#Output-552729740" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-552729740">
 [Starting 'purchaseItem' test]<br/>
 Starting test #3 from CSV file.<br/>
 Opening page: http://automationpractice.com/index.php<br/>
@@ -166,10 +259,10 @@ Adding item into the cart.<br/>
 Going to cart.<br/>
 Checking if total number of item and total price are correct in cart.<br/>
 There is 1 item in cart.<br/>
-Total price including shipping is $30.98<br/>
+Total price including shipping is $32.5<br/>
 Total number of item and total price are correct!<br/>
 Proceeding to checkout.<br/>
-Creating new account using random Email address: dgaygwjj@gmail.com<br/>
+Creating new account using random Email address: pdwxnuth@gmail.com<br/>
 Filling all information using data from CSV file.<br/>
 Checking if delivery details are correct.<br/>
 All delivery information are correct.<br/>
@@ -177,7 +270,7 @@ Accepting terms of services.<br/>
 Proceeding to checkout.<br/>
 Checking quantity and total price are still correct.<br/>
 There is 1 item in cart.<br/>
-Total price including shipping is $30.98.<br/>
+Total price including shipping is $32.5.<br/>
 Quantity and total price still correct.<br/>
 Paying by bank wire.<br/>
 Confirming order.<br/>
@@ -186,8 +279,8 @@ Order is complete.<br/>
 </div>
 </td>
 <td></td>
-<td>22</td>
-<td>com.automationpractice.automationExercise.ExerciseA@63070bab</td></tr>
+<td>28</td>
+<td>com.automationpractice.automationExercise.ExerciseA@5fd4f8f5</td></tr>
 </table><p>
 </body>
 </html>

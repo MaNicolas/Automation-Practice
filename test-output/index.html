@@ -5,8 +5,9 @@
   <meta charset='utf-8'>
   <title>TestNG reports</title>
 
-    <link type="text/css" href="testng-reports.css" rel="stylesheet" />
-    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery.min.js"></script>
     <script type="text/javascript" src="testng-reports.js"></script>
     <script type="text/javascript" src="https://www.google.com/jsapi"></script>
     <script type='text/javascript'>
@@ -23,8 +24,9 @@
   <body>
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -37,8 +39,8 @@
       <div class="suite">
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
-            <a href="#" panel-name="suite-ExerciseASuite.xml" class="navigator-link">
-              <span class="suite-name border-passed">ExerciseASuite.xml</span>
+            <a href="#" panel-name="suite-ExerciseASuite_xml" class="navigator-link">
+              <span class="suite-name border-failed">ExerciseASuite.xml</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -48,37 +50,37 @@
             <div class="suite-section-content">
               <ul>
                 <li>
-                  <a href="#" panel-name="test-xml-ExerciseASuite.xml" class="navigator-link ">
+                  <a href="#" panel-name="test-xml-ExerciseASuite_xml" class="navigator-link ">
                     <span>C:\Users\Nico\eclipse-workspace\automation-exercise\src\test\resources\TestSuites\ExerciseASuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="testlist-ExerciseASuite.xml" class="navigator-link ">
+                  <a href="#" panel-name="testlist-ExerciseASuite_xml" class="navigator-link ">
                     <span class="test-stats">2 tests</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="group-ExerciseASuite.xml" class="navigator-link ">
+                  <a href="#" panel-name="group-ExerciseASuite_xml" class="navigator-link ">
                     <span>0 groups</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="times-ExerciseASuite.xml" class="navigator-link ">
+                  <a href="#" panel-name="times-ExerciseASuite_xml" class="navigator-link ">
                     <span>Times</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="reporter-ExerciseASuite.xml" class="navigator-link ">
+                  <a href="#" panel-name="reporter-ExerciseASuite_xml" class="navigator-link ">
                     <span>Reporter output</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="ignored-methods-ExerciseASuite.xml" class="navigator-link ">
+                  <a href="#" panel-name="ignored-methods-ExerciseASuite_xml" class="navigator-link ">
                     <span>Ignored methods</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="chronological-ExerciseASuite.xml" class="navigator-link ">
+                  <a href="#" panel-name="chronological-ExerciseASuite_xml" class="navigator-link ">
                     <span>Chronological view</span>
                   </a> <!-- navigator-link  -->
                 </li>
@@ -91,46 +93,55 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">6 methods,   6 passed</span>
+                    <span class="method-stats">6 methods, 2 failed,   4 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-ExerciseASuite_xml" class="hide-methods failed suite-ExerciseASuite_xml"> (hide)</a> <!-- hide-methods failed suite-ExerciseASuite_xml -->
+                      <a href="#" panel-name="suite-ExerciseASuite_xml" class="show-methods failed suite-ExerciseASuite_xml"> (show)</a> <!-- show-methods failed suite-ExerciseASuite_xml -->
+                    </span>
+                    <div class="method-list-content failed suite-ExerciseASuite_xml">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-ExerciseASuite_xml" title="com.automationpractice.automationExercise.ExerciseA" class="method navigator-link" hash-for-method="purchaseItem({firstName=nicolas, lastName=ma, zipCode=08001, password=secretPassword, address=8 baker street, pho...)">purchaseItem({firstName=nicolas, lastName=ma, zipCode=08001, password=secretPassword, address=8 baker street, pho...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-ExerciseASuite_xml" title="com.automationpractice.automationExercise.ExerciseA" class="method navigator-link" hash-for-method="purchaseItem({firstName=nicolas, lastName=ma, zipCode=08001, password=secretPassword, address=8 baker street, pho...)">purchaseItem({firstName=nicolas, lastName=ma, zipCode=08001, password=secretPassword, address=8 baker street, pho...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-ExerciseASuite_xml -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
                     <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-ExerciseASuite.xml" class="hide-methods passed suite-ExerciseASuite.xml"> (hide)</a> <!-- hide-methods passed suite-ExerciseASuite.xml -->
-                      <a href="#" panel-name="suite-ExerciseASuite.xml" class="show-methods passed suite-ExerciseASuite.xml"> (show)</a> <!-- show-methods passed suite-ExerciseASuite.xml -->
+                      <a href="#" panel-name="suite-ExerciseASuite_xml" class="hide-methods passed suite-ExerciseASuite_xml"> (hide)</a> <!-- hide-methods passed suite-ExerciseASuite_xml -->
+                      <a href="#" panel-name="suite-ExerciseASuite_xml" class="show-methods passed suite-ExerciseASuite_xml"> (show)</a> <!-- show-methods passed suite-ExerciseASuite_xml -->
                     </span>
-                    <div class="method-list-content passed suite-ExerciseASuite.xml">
+                    <div class="method-list-content passed suite-ExerciseASuite_xml">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-ExerciseASuite.xml" title="com.automationpractice.automationExercise.ExerciseA" class="method navigator-link" hash-for-method="purchaseItem({firstName=nicolas, lastName=ma, zipCode=08001, password=secretPassword, address=8 baker street, pho...)">purchaseItem({firstName=nicolas, lastName=ma, zipCode=08001, password=secretPassword, address=8 baker street, pho...)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-ExerciseASuite_xml" title="com.automationpractice.automationExercise.ExerciseA" class="method navigator-link" hash-for-method="purchaseItem({firstName=nicolas, lastName=ma, zipCode=08001, password=secretPassword, address=8 baker street, pho...)">purchaseItem({firstName=nicolas, lastName=ma, zipCode=08001, password=secretPassword, address=8 baker street, pho...)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-ExerciseASuite.xml" title="com.automationpractice.automationExercise.ExerciseA" class="method navigator-link" hash-for-method="purchaseItem({firstName=john, lastName=smith, zipCode=08022, password=secretPassword, address=25 rambla cataluna,...)">purchaseItem({firstName=john, lastName=smith, zipCode=08022, password=secretPassword, address=25 rambla cataluna,...)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-ExerciseASuite_xml" title="com.automationpractice.automationExercise.ExerciseA" class="method navigator-link" hash-for-method="purchaseItem({firstName=john, lastName=smith, zipCode=08022, password=secretPassword, address=25 rambla cataluna,...)">purchaseItem({firstName=john, lastName=smith, zipCode=08022, password=secretPassword, address=25 rambla cataluna,...)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-ExerciseASuite.xml" title="com.automationpractice.automationExercise.ExerciseA" class="method navigator-link" hash-for-method="purchaseItem({firstName=nicolas, lastName=ma, zipCode=08001, password=secretPassword, address=8 baker street, pho...)">purchaseItem({firstName=nicolas, lastName=ma, zipCode=08001, password=secretPassword, address=8 baker street, pho...)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-ExerciseASuite_xml" title="com.automationpractice.automationExercise.ExerciseA" class="method navigator-link" hash-for-method="purchaseItem({firstName=john, lastName=smith, zipCode=08022, password=secretPassword, address=25 rambla cataluna,...)">purchaseItem({firstName=john, lastName=smith, zipCode=08022, password=secretPassword, address=25 rambla cataluna,...)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-ExerciseASuite.xml" title="com.automationpractice.automationExercise.ExerciseA" class="method navigator-link" hash-for-method="purchaseItem({firstName=nicolas, lastName=ma, zipCode=08001, password=secretPassword, address=8 baker street, pho...)">purchaseItem({firstName=nicolas, lastName=ma, zipCode=08001, password=secretPassword, address=8 baker street, pho...)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-ExerciseASuite_xml" title="com.automationpractice.automationExercise.ExerciseA" class="method navigator-link" hash-for-method="purchaseItem({firstName=nicolas, lastName=ma, zipCode=08001, password=secretPassword, address=8 baker street, pho...)">purchaseItem({firstName=nicolas, lastName=ma, zipCode=08001, password=secretPassword, address=8 baker street, pho...)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-ExerciseASuite.xml" title="com.automationpractice.automationExercise.ExerciseA" class="method navigator-link" hash-for-method="purchaseItem({firstName=nicolas, lastName=ma, zipCode=08001, password=secretPassword, address=8 baker street, pho...)">purchaseItem({firstName=nicolas, lastName=ma, zipCode=08001, password=secretPassword, address=8 baker street, pho...)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-ExerciseASuite.xml" title="com.automationpractice.automationExercise.ExerciseA" class="method navigator-link" hash-for-method="purchaseItem({firstName=john, lastName=smith, zipCode=08022, password=secretPassword, address=25 rambla cataluna,...)">purchaseItem({firstName=john, lastName=smith, zipCode=08022, password=secretPassword, address=25 rambla cataluna,...)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content passed suite-ExerciseASuite.xml -->
+                    </div> <!-- method-list-content passed suite-ExerciseASuite_xml -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -141,8 +152,109 @@
     </div> <!-- navigator-root -->
     <div class="wrapper">
       <div class="main-panel-root">
-        <div panel-name="suite-ExerciseASuite.xml" class="panel ExerciseASuite.xml">
-          <div class="suite-ExerciseASuite.xml-class-passed">
+        <div panel-name="suite-ExerciseASuite_xml" class="panel ExerciseASuite_xml">
+          <div class="suite-ExerciseASuite_xml-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.automationpractice.automationExercise.ExerciseA</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="purchaseItem({firstName=nicolas, lastName=ma, zipCode=08001, password=secretPassword, address=8 baker street, pho...)">
+                  </a> <!-- purchaseItem({firstName=nicolas, lastName=ma, zipCode=08001, password=secretPassword, address=8 baker street, pho...) -->
+                  <span class="method-name">purchaseItem</span>
+                  <span class="parameters">({firstName=nicolas, lastName=ma, zipCode=08001, password=secretPassword, address=8 baker street, phoneNumber=123456, testNumber=1, city=barcelona, aliasEmailAddress=anotherRandomEmail@gmail.com, itemToPurchase=dress})</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.id: customer_firstname (tried for 3 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at com.automationpractice.pages.BasePageObject.waitFor(BasePageObject.java:100)
+	at com.automationpractice.pages.BasePageObject.waitForVisibilityOf(BasePageObject.java:88)
+	at com.automationpractice.pages.BasePageObject.type(BasePageObject.java:55)
+	at com.automationpractice.pages.AccountCreationPageObject.typeFirstname(AccountCreationPageObject.java:48)
+	at com.automationpractice.pages.AccountCreationPageObject.createNewAccount(AccountCreationPageObject.java:36)
+	at com.automationpractice.automationExercise.ExerciseA.purchaseItem(ExerciseA.java:69)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#customer_firstname&quot;}
+  (Session info: chrome=90.0.4430.93)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;MSI&apos;, ip: &apos;192.168.1.40&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.6&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.93, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\Nico\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:52714}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 92dd1ed3e72233a3d2dfb77d9b65e10d
+*** Element info: {Using=id, value=customer_firstname}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 29 more
+... Removed 22 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="purchaseItem({firstName=nicolas, lastName=ma, zipCode=08001, password=secretPassword, address=8 baker street, pho...)">
+                  </a> <!-- purchaseItem({firstName=nicolas, lastName=ma, zipCode=08001, password=secretPassword, address=8 baker street, pho...) -->
+                  <span class="method-name">purchaseItem</span>
+                  <span class="parameters">({firstName=nicolas, lastName=ma, zipCode=08001, password=secretPassword, address=8 baker street, phoneNumber=123456, testNumber=1, city=barcelona, aliasEmailAddress=anotherRandomEmail@gmail.com, itemToPurchase=dress})</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.id: customer_firstname (tried for 3 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at com.automationpractice.pages.BasePageObject.waitFor(BasePageObject.java:100)
+	at com.automationpractice.pages.BasePageObject.waitForVisibilityOf(BasePageObject.java:88)
+	at com.automationpractice.pages.BasePageObject.type(BasePageObject.java:55)
+	at com.automationpractice.pages.AccountCreationPageObject.typeFirstname(AccountCreationPageObject.java:48)
+	at com.automationpractice.pages.AccountCreationPageObject.createNewAccount(AccountCreationPageObject.java:36)
+	at com.automationpractice.automationExercise.ExerciseA.purchaseItem(ExerciseA.java:69)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: #customer_firstname
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;MSI&apos;, ip: &apos;192.168.1.40&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.6&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 87.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210318103112, moz:geckodriverVersion: 0.29.0, moz:headless: false, moz:processID: 6224, moz:profile: C:\Users\Nico\AppData\Local..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: f5795359-8f2e-4963-9ee6-fedfb71d03c0
+*** Element info: {Using=id, value=customer_firstname}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 29 more
+... Removed 21 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-ExerciseASuite_xml-class-failed -->
+          <div class="suite-ExerciseASuite_xml-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
               <span class="class-name">com.automationpractice.automationExercise.ExerciseA</span>
@@ -153,7 +265,15 @@
                   <a name="purchaseItem({firstName=nicolas, lastName=ma, zipCode=08001, password=secretPassword, address=8 baker street, pho...)">
                   </a> <!-- purchaseItem({firstName=nicolas, lastName=ma, zipCode=08001, password=secretPassword, address=8 baker street, pho...) -->
                   <span class="method-name">purchaseItem</span>
-                  <span class="parameters">({firstName=nicolas, lastName=ma, zipCode=08001, password=secretPassword, address=8 baker street, phoneNumber=123456, testNumber=1, city=barcelona, aliasEmailAddress=anotherRandomEmail@gmail.com, itemToPurchase=dress})</span>
+                  <span class="parameters">({firstName=nicolas, lastName=ma, zipCode=08001, password=secretPassword, address=8 baker street, phoneNumber=123456, testNumber=2, city=barcelona, aliasEmailAddress=anotherRandomEmail@gmail.com, itemToPurchase=blouse})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="purchaseItem({firstName=john, lastName=smith, zipCode=08022, password=secretPassword, address=25 rambla cataluna,...)">
+                  </a> <!-- purchaseItem({firstName=john, lastName=smith, zipCode=08022, password=secretPassword, address=25 rambla cataluna,...) -->
+                  <span class="method-name">purchaseItem</span>
+                  <span class="parameters">({firstName=john, lastName=smith, zipCode=08022, password=secretPassword, address=25 rambla cataluna, phoneNumber=425684, testNumber=3, city=Barcelona, aliasEmailAddress=aliasemail@gmail.com, itemToPurchase=shoes})</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -170,43 +290,19 @@
                   </a> <!-- purchaseItem({firstName=nicolas, lastName=ma, zipCode=08001, password=secretPassword, address=8 baker street, pho...) -->
                   <span class="method-name">purchaseItem</span>
                   <span class="parameters">({firstName=nicolas, lastName=ma, zipCode=08001, password=secretPassword, address=8 baker street, phoneNumber=123456, testNumber=2, city=barcelona, aliasEmailAddress=anotherRandomEmail@gmail.com, itemToPurchase=blouse})</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="purchaseItem({firstName=nicolas, lastName=ma, zipCode=08001, password=secretPassword, address=8 baker street, pho...)">
-                  </a> <!-- purchaseItem({firstName=nicolas, lastName=ma, zipCode=08001, password=secretPassword, address=8 baker street, pho...) -->
-                  <span class="method-name">purchaseItem</span>
-                  <span class="parameters">({firstName=nicolas, lastName=ma, zipCode=08001, password=secretPassword, address=8 baker street, phoneNumber=123456, testNumber=1, city=barcelona, aliasEmailAddress=anotherRandomEmail@gmail.com, itemToPurchase=dress})</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="purchaseItem({firstName=nicolas, lastName=ma, zipCode=08001, password=secretPassword, address=8 baker street, pho...)">
-                  </a> <!-- purchaseItem({firstName=nicolas, lastName=ma, zipCode=08001, password=secretPassword, address=8 baker street, pho...) -->
-                  <span class="method-name">purchaseItem</span>
-                  <span class="parameters">({firstName=nicolas, lastName=ma, zipCode=08001, password=secretPassword, address=8 baker street, phoneNumber=123456, testNumber=2, city=barcelona, aliasEmailAddress=anotherRandomEmail@gmail.com, itemToPurchase=blouse})</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="purchaseItem({firstName=john, lastName=smith, zipCode=08022, password=secretPassword, address=25 rambla cataluna,...)">
-                  </a> <!-- purchaseItem({firstName=john, lastName=smith, zipCode=08022, password=secretPassword, address=25 rambla cataluna,...) -->
-                  <span class="method-name">purchaseItem</span>
-                  <span class="parameters">({firstName=john, lastName=smith, zipCode=08022, password=secretPassword, address=25 rambla cataluna, phoneNumber=425684, testNumber=3, city=Barcelona, aliasEmailAddress=aliasemail@gmail.com, itemToPurchase=shoes})</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-ExerciseASuite.xml-class-passed -->
-        </div> <!-- panel ExerciseASuite.xml -->
-        <div panel-name="test-xml-ExerciseASuite.xml" class="panel">
+          </div> <!-- suite-ExerciseASuite_xml-class-passed -->
+        </div> <!-- panel ExerciseASuite_xml -->
+        <div panel-name="test-xml-ExerciseASuite_xml" class="panel">
           <div class="main-panel-header rounded-window-top">
             <span class="header-content">C:\Users\Nico\eclipse-workspace\automation-exercise\src\test\resources\TestSuites\ExerciseASuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
-&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite thread-count=&quot;2&quot; parallel=&quot;tests&quot; name=&quot;ExerciseASuite.xml&quot;&gt;
   &lt;test thread-count=&quot;2&quot; parallel=&quot;tests&quot; name=&quot;ExerciseAUsingChrome&quot;&gt;
     &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
@@ -224,7 +320,7 @@
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="testlist-ExerciseASuite.xml" class="panel">
+        <div panel-name="testlist-ExerciseASuite_xml" class="panel">
           <div class="main-panel-header rounded-window-top">
             <span class="header-content">Tests for ExerciseASuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
@@ -239,22 +335,22 @@
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="group-ExerciseASuite.xml" class="panel">
+        <div panel-name="group-ExerciseASuite_xml" class="panel">
           <div class="main-panel-header rounded-window-top">
             <span class="header-content">Groups for ExerciseASuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="times-ExerciseASuite.xml" class="panel">
+        <div panel-name="times-ExerciseASuite_xml" class="panel">
           <div class="main-panel-header rounded-window-top">
             <span class="header-content">Times for ExerciseASuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="times-div">
               <script type="text/javascript">
-suiteTableInitFunctions.push('tableData_ExerciseASuite.xml');
-function tableData_ExerciseASuite.xml() {
+suiteTableInitFunctions.push('tableData_ExerciseASuite_xml');
+function tableData_ExerciseASuite_xml() {
 var data = new google.visualization.DataTable();
 data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
@@ -264,38 +360,38 @@ data.addRows(6);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'purchaseItem')
 data.setCell(0, 2, 'com.automationpractice.automationExercise.ExerciseA')
-data.setCell(0, 3, 33224);
+data.setCell(0, 3, 30909);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'purchaseItem')
 data.setCell(1, 2, 'com.automationpractice.automationExercise.ExerciseA')
-data.setCell(1, 3, 29894);
+data.setCell(1, 3, 30074);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'purchaseItem')
 data.setCell(2, 2, 'com.automationpractice.automationExercise.ExerciseA')
-data.setCell(2, 3, 26237);
+data.setCell(2, 3, 28628);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'purchaseItem')
 data.setCell(3, 2, 'com.automationpractice.automationExercise.ExerciseA')
-data.setCell(3, 3, 25668);
+data.setCell(3, 3, 28061);
 data.setCell(4, 0, 4)
 data.setCell(4, 1, 'purchaseItem')
 data.setCell(4, 2, 'com.automationpractice.automationExercise.ExerciseA')
-data.setCell(4, 3, 22545);
+data.setCell(4, 3, 26085);
 data.setCell(5, 0, 5)
 data.setCell(5, 1, 'purchaseItem')
 data.setCell(5, 2, 'com.automationpractice.automationExercise.ExerciseA')
-data.setCell(5, 3, 20963);
-window.suiteTableData['ExerciseASuite.xml']= { tableData: data, tableDiv: 'times-div-ExerciseASuite.xml'}
+data.setCell(5, 3, 23228);
+window.suiteTableData['ExerciseASuite_xml']= { tableData: data, tableDiv: 'times-div-ExerciseASuite_xml'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 2 minutes</span>
-              <div id="times-div-ExerciseASuite.xml">
-              </div> <!-- times-div-ExerciseASuite.xml -->
+              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <div id="times-div-ExerciseASuite_xml">
+              </div> <!-- times-div-ExerciseASuite_xml -->
             </div> <!-- times-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="reporter-ExerciseASuite.xml" class="panel">
+        <div panel-name="reporter-ExerciseASuite_xml" class="panel">
           <div class="main-panel-header rounded-window-top">
             <span class="header-content">Reporter output for ExerciseASuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
@@ -304,10 +400,42 @@ return data;
               <span class="reporter-method-name">purchaseItem({firstName=nicolas, lastName=ma, zipCode=08001, password=secretPassword, address=8 baker street, pho...)</span>
               <div class="reporter-method-output-div">
                 <span class="reporter-method-output">[Starting 'purchaseItem' test]</span>
-                <span class="reporter-method-output">Starting test #1 from CSV file.</span>
+                <span class="reporter-method-output">Starting test #2 from CSV file.</span>
                 <span class="reporter-method-output">Opening page: http://automationpractice.com/index.php</span>
                 <span class="reporter-method-output">Page opened!</span>
-                <span class="reporter-method-output">Searching for item: 'dress'.</span>
+                <span class="reporter-method-output">Searching for item: 'blouse'.</span>
+                <span class="reporter-method-output">Selecting random item from the list.</span>
+                <span class="reporter-method-output">Adding item into the cart.</span>
+                <span class="reporter-method-output">Going to cart.</span>
+                <span class="reporter-method-output">Checking if total number of item and total price are correct in cart.</span>
+                <span class="reporter-method-output">There is 1 item in cart.</span>
+                <span class="reporter-method-output">Total price including shipping is $29.0</span>
+                <span class="reporter-method-output">Total number of item and total price are correct!</span>
+                <span class="reporter-method-output">Proceeding to checkout.</span>
+                <span class="reporter-method-output">Creating new account using random Email address: qhngsmso@gmail.com</span>
+                <span class="reporter-method-output">Filling all information using data from CSV file.</span>
+                <span class="reporter-method-output">Checking if delivery details are correct.</span>
+                <span class="reporter-method-output">All delivery information are correct.</span>
+                <span class="reporter-method-output">Accepting terms of services.</span>
+                <span class="reporter-method-output">Proceeding to checkout.</span>
+                <span class="reporter-method-output">Checking quantity and total price are still correct.</span>
+                <span class="reporter-method-output">There is 1 item in cart.</span>
+                <span class="reporter-method-output">Total price including shipping is $29.0.</span>
+                <span class="reporter-method-output">Quantity and total price still correct.</span>
+                <span class="reporter-method-output">Paying by bank wire.</span>
+                <span class="reporter-method-output">Confirming order.</span>
+                <span class="reporter-method-output">Order is complete.</span>
+                <span class="reporter-method-output">[RESULT: 'purchaseItem' has successfully passed.]</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">purchaseItem({firstName=john, lastName=smith, zipCode=08022, password=secretPassword, address=25 rambla cataluna,...)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">[Starting 'purchaseItem' test]</span>
+                <span class="reporter-method-output">Starting test #3 from CSV file.</span>
+                <span class="reporter-method-output">Opening page: http://automationpractice.com/index.php</span>
+                <span class="reporter-method-output">Page opened!</span>
+                <span class="reporter-method-output">Searching for item: 'shoes'.</span>
                 <span class="reporter-method-output">Selecting random item from the list.</span>
                 <span class="reporter-method-output">Adding item into the cart.</span>
                 <span class="reporter-method-output">Going to cart.</span>
@@ -316,7 +444,7 @@ return data;
                 <span class="reporter-method-output">Total price including shipping is $32.5</span>
                 <span class="reporter-method-output">Total number of item and total price are correct!</span>
                 <span class="reporter-method-output">Proceeding to checkout.</span>
-                <span class="reporter-method-output">Creating new account using random Email address: vrbxrawo@gmail.com</span>
+                <span class="reporter-method-output">Creating new account using random Email address: pdwxnuth@gmail.com</span>
                 <span class="reporter-method-output">Filling all information using data from CSV file.</span>
                 <span class="reporter-method-output">Checking if delivery details are correct.</span>
                 <span class="reporter-method-output">All delivery information are correct.</span>
@@ -333,6 +461,26 @@ return data;
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
             <div class="reporter-method-div">
+              <span class="reporter-method-name">purchaseItem({firstName=nicolas, lastName=ma, zipCode=08001, password=secretPassword, address=8 baker street, pho...)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">[Starting 'purchaseItem' test]</span>
+                <span class="reporter-method-output">Starting test #1 from CSV file.</span>
+                <span class="reporter-method-output">Opening page: http://automationpractice.com/index.php</span>
+                <span class="reporter-method-output">Page opened!</span>
+                <span class="reporter-method-output">Searching for item: 'dress'.</span>
+                <span class="reporter-method-output">Selecting random item from the list.</span>
+                <span class="reporter-method-output">Adding item into the cart.</span>
+                <span class="reporter-method-output">Going to cart.</span>
+                <span class="reporter-method-output">Checking if total number of item and total price are correct in cart.</span>
+                <span class="reporter-method-output">There is 1 item in cart.</span>
+                <span class="reporter-method-output">Total price including shipping is $29.0</span>
+                <span class="reporter-method-output">Total number of item and total price are correct!</span>
+                <span class="reporter-method-output">Proceeding to checkout.</span>
+                <span class="reporter-method-output">Creating new account using random Email address: exnruekz@gmail.com</span>
+                <span class="reporter-method-output">[RESULT: 'purchaseItem' has failed. Taking screenshot!]</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
               <span class="reporter-method-name">purchaseItem({firstName=john, lastName=smith, zipCode=08022, password=secretPassword, address=25 rambla cataluna,...)</span>
               <div class="reporter-method-output-div">
                 <span class="reporter-method-output">[Starting 'purchaseItem' test]</span>
@@ -345,10 +493,10 @@ return data;
                 <span class="reporter-method-output">Going to cart.</span>
                 <span class="reporter-method-output">Checking if total number of item and total price are correct in cart.</span>
                 <span class="reporter-method-output">There is 1 item in cart.</span>
-                <span class="reporter-method-output">Total price including shipping is $30.98</span>
+                <span class="reporter-method-output">Total price including shipping is $32.5</span>
                 <span class="reporter-method-output">Total number of item and total price are correct!</span>
                 <span class="reporter-method-output">Proceeding to checkout.</span>
-                <span class="reporter-method-output">Creating new account using random Email address: dgaygwjj@gmail.com</span>
+                <span class="reporter-method-output">Creating new account using random Email address: tqjhwgkt@gmail.com</span>
                 <span class="reporter-method-output">Filling all information using data from CSV file.</span>
                 <span class="reporter-method-output">Checking if delivery details are correct.</span>
                 <span class="reporter-method-output">All delivery information are correct.</span>
@@ -356,7 +504,7 @@ return data;
                 <span class="reporter-method-output">Proceeding to checkout.</span>
                 <span class="reporter-method-output">Checking quantity and total price are still correct.</span>
                 <span class="reporter-method-output">There is 1 item in cart.</span>
-                <span class="reporter-method-output">Total price including shipping is $30.98.</span>
+                <span class="reporter-method-output">Total price including shipping is $32.5.</span>
                 <span class="reporter-method-output">Quantity and total price still correct.</span>
                 <span class="reporter-method-output">Paying by bank wire.</span>
                 <span class="reporter-method-output">Confirming order.</span>
@@ -380,7 +528,7 @@ return data;
                 <span class="reporter-method-output">Total price including shipping is $29.0</span>
                 <span class="reporter-method-output">Total number of item and total price are correct!</span>
                 <span class="reporter-method-output">Proceeding to checkout.</span>
-                <span class="reporter-method-output">Creating new account using random Email address: ghsazeuo@gmail.com</span>
+                <span class="reporter-method-output">Creating new account using random Email address: nfztbyjr@gmail.com</span>
                 <span class="reporter-method-output">Filling all information using data from CSV file.</span>
                 <span class="reporter-method-output">Checking if delivery details are correct.</span>
                 <span class="reporter-method-output">All delivery information are correct.</span>
@@ -409,99 +557,23 @@ return data;
                 <span class="reporter-method-output">Going to cart.</span>
                 <span class="reporter-method-output">Checking if total number of item and total price are correct in cart.</span>
                 <span class="reporter-method-output">There is 1 item in cart.</span>
-                <span class="reporter-method-output">Total price including shipping is $18.4</span>
+                <span class="reporter-method-output">Total price including shipping is $28.0</span>
                 <span class="reporter-method-output">Total number of item and total price are correct!</span>
                 <span class="reporter-method-output">Proceeding to checkout.</span>
-                <span class="reporter-method-output">Creating new account using random Email address: lnapgojy@gmail.com</span>
-                <span class="reporter-method-output">Filling all information using data from CSV file.</span>
-                <span class="reporter-method-output">Checking if delivery details are correct.</span>
-                <span class="reporter-method-output">All delivery information are correct.</span>
-                <span class="reporter-method-output">Accepting terms of services.</span>
-                <span class="reporter-method-output">Proceeding to checkout.</span>
-                <span class="reporter-method-output">Checking quantity and total price are still correct.</span>
-                <span class="reporter-method-output">There is 1 item in cart.</span>
-                <span class="reporter-method-output">Total price including shipping is $18.4.</span>
-                <span class="reporter-method-output">Quantity and total price still correct.</span>
-                <span class="reporter-method-output">Paying by bank wire.</span>
-                <span class="reporter-method-output">Confirming order.</span>
-                <span class="reporter-method-output">Order is complete.</span>
-                <span class="reporter-method-output">[RESULT: 'purchaseItem' has successfully passed.]</span>
-              </div> <!-- reporter-method-output-div -->
-            </div> <!-- reporter-method-div -->
-            <div class="reporter-method-div">
-              <span class="reporter-method-name">purchaseItem({firstName=nicolas, lastName=ma, zipCode=08001, password=secretPassword, address=8 baker street, pho...)</span>
-              <div class="reporter-method-output-div">
-                <span class="reporter-method-output">[Starting 'purchaseItem' test]</span>
-                <span class="reporter-method-output">Starting test #2 from CSV file.</span>
-                <span class="reporter-method-output">Opening page: http://automationpractice.com/index.php</span>
-                <span class="reporter-method-output">Page opened!</span>
-                <span class="reporter-method-output">Searching for item: 'blouse'.</span>
-                <span class="reporter-method-output">Selecting random item from the list.</span>
-                <span class="reporter-method-output">Adding item into the cart.</span>
-                <span class="reporter-method-output">Going to cart.</span>
-                <span class="reporter-method-output">Checking if total number of item and total price are correct in cart.</span>
-                <span class="reporter-method-output">There is 1 item in cart.</span>
-                <span class="reporter-method-output">Total price including shipping is $29.0</span>
-                <span class="reporter-method-output">Total number of item and total price are correct!</span>
-                <span class="reporter-method-output">Proceeding to checkout.</span>
-                <span class="reporter-method-output">Creating new account using random Email address: smdtsoqo@gmail.com</span>
-                <span class="reporter-method-output">Filling all information using data from CSV file.</span>
-                <span class="reporter-method-output">Checking if delivery details are correct.</span>
-                <span class="reporter-method-output">All delivery information are correct.</span>
-                <span class="reporter-method-output">Accepting terms of services.</span>
-                <span class="reporter-method-output">Proceeding to checkout.</span>
-                <span class="reporter-method-output">Checking quantity and total price are still correct.</span>
-                <span class="reporter-method-output">There is 1 item in cart.</span>
-                <span class="reporter-method-output">Total price including shipping is $29.0.</span>
-                <span class="reporter-method-output">Quantity and total price still correct.</span>
-                <span class="reporter-method-output">Paying by bank wire.</span>
-                <span class="reporter-method-output">Confirming order.</span>
-                <span class="reporter-method-output">Order is complete.</span>
-                <span class="reporter-method-output">[RESULT: 'purchaseItem' has successfully passed.]</span>
-              </div> <!-- reporter-method-output-div -->
-            </div> <!-- reporter-method-div -->
-            <div class="reporter-method-div">
-              <span class="reporter-method-name">purchaseItem({firstName=john, lastName=smith, zipCode=08022, password=secretPassword, address=25 rambla cataluna,...)</span>
-              <div class="reporter-method-output-div">
-                <span class="reporter-method-output">[Starting 'purchaseItem' test]</span>
-                <span class="reporter-method-output">Starting test #3 from CSV file.</span>
-                <span class="reporter-method-output">Opening page: http://automationpractice.com/index.php</span>
-                <span class="reporter-method-output">Page opened!</span>
-                <span class="reporter-method-output">Searching for item: 'shoes'.</span>
-                <span class="reporter-method-output">Selecting random item from the list.</span>
-                <span class="reporter-method-output">Adding item into the cart.</span>
-                <span class="reporter-method-output">Going to cart.</span>
-                <span class="reporter-method-output">Checking if total number of item and total price are correct in cart.</span>
-                <span class="reporter-method-output">There is 1 item in cart.</span>
-                <span class="reporter-method-output">Total price including shipping is $18.4</span>
-                <span class="reporter-method-output">Total number of item and total price are correct!</span>
-                <span class="reporter-method-output">Proceeding to checkout.</span>
-                <span class="reporter-method-output">Creating new account using random Email address: ighwuyms@gmail.com</span>
-                <span class="reporter-method-output">Filling all information using data from CSV file.</span>
-                <span class="reporter-method-output">Checking if delivery details are correct.</span>
-                <span class="reporter-method-output">All delivery information are correct.</span>
-                <span class="reporter-method-output">Accepting terms of services.</span>
-                <span class="reporter-method-output">Proceeding to checkout.</span>
-                <span class="reporter-method-output">Checking quantity and total price are still correct.</span>
-                <span class="reporter-method-output">There is 1 item in cart.</span>
-                <span class="reporter-method-output">Total price including shipping is $18.4.</span>
-                <span class="reporter-method-output">Quantity and total price still correct.</span>
-                <span class="reporter-method-output">Paying by bank wire.</span>
-                <span class="reporter-method-output">Confirming order.</span>
-                <span class="reporter-method-output">Order is complete.</span>
-                <span class="reporter-method-output">[RESULT: 'purchaseItem' has successfully passed.]</span>
+                <span class="reporter-method-output">Creating new account using random Email address: ophokwqw@gmail.com</span>
+                <span class="reporter-method-output">[RESULT: 'purchaseItem' has failed. Taking screenshot!]</span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="ignored-methods-ExerciseASuite.xml" class="panel">
+        <div panel-name="ignored-methods-ExerciseASuite_xml" class="panel">
           <div class="main-panel-header rounded-window-top">
             <span class="header-content">0 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="chronological-ExerciseASuite.xml" class="panel">
+        <div panel-name="chronological-ExerciseASuite_xml" class="panel">
           <div class="main-panel-header rounded-window-top">
             <span class="header-content">Methods in chronological order</span>
           </div> <!-- main-panel-header rounded-window-top -->
@@ -517,96 +589,101 @@ return data;
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">purchaseItem({firstName=nicolas, lastName=ma, zipCode=08001, password=secretPassword, address=8 baker street, pho...)</span>
-                <span class="method-start">1971 ms</span>
+                <span class="method-start">1921 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">purchaseItem({firstName=nicolas, lastName=ma, zipCode=08001, password=secretPassword, address=8 baker street, pho...)</span>
-                <span class="method-start">5537 ms</span>
+                <span class="method-start">5084 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">takeScreenshot([TestResult name=purchaseItem status=SUCCESS method=ExerciseA.purchaseItem(java.util.Map)[pri:0, ins...)</span>
-                <span class="method-start">35197 ms</span>
+                <span class="method-name">takeScreenshot([TestResult name=purchaseItem status=FAILURE method=ExerciseA.purchaseItem(java.util.Map)[pri:0, ins...)</span>
+                <span class="method-start">29988 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">35197 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method after">
-                <span class="method-name">takeScreenshot([TestResult name=purchaseItem status=SUCCESS method=ExerciseA.purchaseItem(java.util.Map)[pri:0, ins...)</span>
-                <span class="method-start">35434 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">35434 ms</span>
+                <span class="method-start">30251 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setup(public void com.automationpractice.automationExercise.ExerciseA.purchaseItem(java.util.Map), chrome,...)</span>
-                <span class="method-start">35857 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="configuration-method before">
-                <span class="method-name">setup(public void com.automationpractice.automationExercise.ExerciseA.purchaseItem(java.util.Map), firefox...)</span>
-                <span class="method-start">36323 ms</span>
+                <span class="method-start">30877 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">purchaseItem({firstName=nicolas, lastName=ma, zipCode=08001, password=secretPassword, address=8 baker street, pho...)</span>
-                <span class="method-start">37140 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">purchaseItem({firstName=nicolas, lastName=ma, zipCode=08001, password=secretPassword, address=8 baker street, pho...)</span>
-                <span class="method-start">40863 ms</span>
+                <span class="method-start">32178 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">takeScreenshot([TestResult name=purchaseItem status=SUCCESS method=ExerciseA.purchaseItem(java.util.Map)[pri:0, ins...)</span>
-                <span class="method-start">62809 ms</span>
+                <span class="method-name">takeScreenshot([TestResult name=purchaseItem status=FAILURE method=ExerciseA.purchaseItem(java.util.Map)[pri:0, ins...)</span>
+                <span class="method-start">35997 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">62810 ms</span>
+                <span class="method-start">36146 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(public void com.automationpractice.automationExercise.ExerciseA.purchaseItem(java.util.Map), firefox...)</span>
+                <span class="method-start">37002 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">purchaseItem({firstName=nicolas, lastName=ma, zipCode=08001, password=secretPassword, address=8 baker street, pho...)</span>
+                <span class="method-start">41575 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">58264 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">takeScreenshot([TestResult name=purchaseItem status=SUCCESS method=ExerciseA.purchaseItem(java.util.Map)[pri:0, ins...)</span>
+                <span class="method-start">58264 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setup(public void com.automationpractice.automationExercise.ExerciseA.purchaseItem(java.util.Map), chrome,...)</span>
-                <span class="method-start">63462 ms</span>
+                <span class="method-start">58931 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">purchaseItem({firstName=john, lastName=smith, zipCode=08022, password=secretPassword, address=25 rambla cataluna,...)</span>
-                <span class="method-start">64770 ms</span>
+                <span class="method-start">60228 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">takeScreenshot([TestResult name=purchaseItem status=SUCCESS method=ExerciseA.purchaseItem(java.util.Map)[pri:0, ins...)</span>
-                <span class="method-start">67101 ms</span>
+                <span class="method-start">64804 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">67102 ms</span>
+                <span class="method-start">64805 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setup(public void com.automationpractice.automationExercise.ExerciseA.purchaseItem(java.util.Map), firefox...)</span>
-                <span class="method-start">67950 ms</span>
+                <span class="method-start">65568 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">purchaseItem({firstName=john, lastName=smith, zipCode=08022, password=secretPassword, address=25 rambla cataluna,...)</span>
-                <span class="method-start">72474 ms</span>
+                <span class="method-start">70104 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">takeScreenshot([TestResult name=purchaseItem status=SUCCESS method=ExerciseA.purchaseItem(java.util.Map)[pri:0, ins...)</span>
-                <span class="method-start">87316 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">87316 ms</span>
+                <span class="method-start">88857 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method after">
                 <span class="method-name">takeScreenshot([TestResult name=purchaseItem status=SUCCESS method=ExerciseA.purchaseItem(java.util.Map)[pri:0, ins...)</span>
-                <span class="method-start">93439 ms</span>
+                <span class="method-start">88857 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">takeScreenshot([TestResult name=purchaseItem status=SUCCESS method=ExerciseA.purchaseItem(java.util.Map)[pri:0, ins...)</span>
+                <span class="method-start">100179 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">93439 ms</span>
+                <span class="method-start">100179 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->
     </div> <!-- wrapper -->
   </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
 </html>

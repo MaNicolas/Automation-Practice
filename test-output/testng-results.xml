@@ -1,12 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
+<testng-results ignored="0" total="6" passed="4" failed="2" skipped="0">
   <reporter-output>
-    <line>
-      <![CDATA[[TEST 'ExerciseAUsingFirefox' STARTED]]]>
-    </line>
-    <line>
-      <![CDATA[Launching browser.]]>
-    </line>
     <line>
       <![CDATA[[TEST 'ExerciseAUsingChrome' STARTED]]]>
     </line>
@@ -14,16 +8,22 @@
       <![CDATA[Launching browser.]]>
     </line>
     <line>
-      <![CDATA[Create driver: chrome]]>
+      <![CDATA[[TEST 'ExerciseAUsingFirefox' STARTED]]]>
+    </line>
+    <line>
+      <![CDATA[Launching browser.]]>
     </line>
     <line>
       <![CDATA[Create driver: firefox]]>
     </line>
     <line>
-      <![CDATA[Starting chrome browser.]]>
+      <![CDATA[Create driver: chrome]]>
     </line>
     <line>
       <![CDATA[Starting firefox browser.]]>
+    </line>
+    <line>
+      <![CDATA[Starting chrome browser.]]>
     </line>
     <line>
       <![CDATA[[Starting 'purchaseItem' test]]]>
@@ -48,6 +48,21 @@
     </line>
     <line>
       <![CDATA[Searching for item: 'dress'.]]>
+    </line>
+    <line>
+      <![CDATA[Selecting random item from the list.]]>
+    </line>
+    <line>
+      <![CDATA[Page opened!]]>
+    </line>
+    <line>
+      <![CDATA[Searching for item: 'dress'.]]>
+    </line>
+    <line>
+      <![CDATA[Adding item into the cart.]]>
+    </line>
+    <line>
+      <![CDATA[Going to cart.]]>
     </line>
     <line>
       <![CDATA[Selecting random item from the list.]]>
@@ -59,10 +74,19 @@
       <![CDATA[Going to cart.]]>
     </line>
     <line>
-      <![CDATA[Page opened!]]>
+      <![CDATA[Checking if total number of item and total price are correct in cart.]]>
     </line>
     <line>
-      <![CDATA[Searching for item: 'dress'.]]>
+      <![CDATA[There is 1 item in cart.]]>
+    </line>
+    <line>
+      <![CDATA[Total price including shipping is $29.0]]>
+    </line>
+    <line>
+      <![CDATA[Total number of item and total price are correct!]]>
+    </line>
+    <line>
+      <![CDATA[Proceeding to checkout.]]>
     </line>
     <line>
       <![CDATA[Checking if total number of item and total price are correct in cart.]]>
@@ -71,7 +95,271 @@
       <![CDATA[There is 1 item in cart.]]>
     </line>
     <line>
+      <![CDATA[Total price including shipping is $28.0]]>
+    </line>
+    <line>
+      <![CDATA[Total number of item and total price are correct!]]>
+    </line>
+    <line>
+      <![CDATA[Proceeding to checkout.]]>
+    </line>
+    <line>
+      <![CDATA[Creating new account using random Email address: exnruekz@gmail.com]]>
+    </line>
+    <line>
+      <![CDATA[[RESULT: 'purchaseItem' has failed. Taking screenshot!]]]>
+    </line>
+    <line>
+      <![CDATA[Screenshot available at C:\Users\Nico\eclipse-workspace\automation-exercise\test-output\screenshots\20210506\ExerciseASuite.xml\ExerciseAUsingChrome\purchaseItem\180144493 .png]]>
+    </line>
+    <line>
+      <![CDATA[Closing browser.]]>
+    </line>
+    <line>
+      <![CDATA[Creating new account using random Email address: ophokwqw@gmail.com]]>
+    </line>
+    <line>
+      <![CDATA[Launching browser.]]>
+    </line>
+    <line>
+      <![CDATA[Create driver: chrome]]>
+    </line>
+    <line>
+      <![CDATA[Starting chrome browser.]]>
+    </line>
+    <line>
+      <![CDATA[[Starting 'purchaseItem' test]]]>
+    </line>
+    <line>
+      <![CDATA[Starting test #2 from CSV file.]]>
+    </line>
+    <line>
+      <![CDATA[Opening page: http://automationpractice.com/index.php]]>
+    </line>
+    <line>
+      <![CDATA[[RESULT: 'purchaseItem' has failed. Taking screenshot!]]]>
+    </line>
+    <line>
+      <![CDATA[Screenshot available at C:\Users\Nico\eclipse-workspace\automation-exercise\test-output\screenshots\20210506\ExerciseASuite.xml\ExerciseAUsingFirefox\purchaseItem\180150395 .png]]>
+    </line>
+    <line>
+      <![CDATA[Closing browser.]]>
+    </line>
+    <line>
+      <![CDATA[Launching browser.]]>
+    </line>
+    <line>
+      <![CDATA[Create driver: firefox]]>
+    </line>
+    <line>
+      <![CDATA[Starting firefox browser.]]>
+    </line>
+    <line>
+      <![CDATA[Page opened!]]>
+    </line>
+    <line>
+      <![CDATA[Searching for item: 'blouse'.]]>
+    </line>
+    <line>
       <![CDATA[Selecting random item from the list.]]>
+    </line>
+    <line>
+      <![CDATA[Adding item into the cart.]]>
+    </line>
+    <line>
+      <![CDATA[Going to cart.]]>
+    </line>
+    <line>
+      <![CDATA[[Starting 'purchaseItem' test]]]>
+    </line>
+    <line>
+      <![CDATA[Starting test #2 from CSV file.]]>
+    </line>
+    <line>
+      <![CDATA[Opening page: http://automationpractice.com/index.php]]>
+    </line>
+    <line>
+      <![CDATA[Checking if total number of item and total price are correct in cart.]]>
+    </line>
+    <line>
+      <![CDATA[There is 1 item in cart.]]>
+    </line>
+    <line>
+      <![CDATA[Total price including shipping is $29.0]]>
+    </line>
+    <line>
+      <![CDATA[Total number of item and total price are correct!]]>
+    </line>
+    <line>
+      <![CDATA[Proceeding to checkout.]]>
+    </line>
+    <line>
+      <![CDATA[Creating new account using random Email address: qhngsmso@gmail.com]]>
+    </line>
+    <line>
+      <![CDATA[Page opened!]]>
+    </line>
+    <line>
+      <![CDATA[Searching for item: 'blouse'.]]>
+    </line>
+    <line>
+      <![CDATA[Selecting random item from the list.]]>
+    </line>
+    <line>
+      <![CDATA[Adding item into the cart.]]>
+    </line>
+    <line>
+      <![CDATA[Going to cart.]]>
+    </line>
+    <line>
+      <![CDATA[Filling all information using data from CSV file.]]>
+    </line>
+    <line>
+      <![CDATA[Checking if total number of item and total price are correct in cart.]]>
+    </line>
+    <line>
+      <![CDATA[There is 1 item in cart.]]>
+    </line>
+    <line>
+      <![CDATA[Total price including shipping is $29.0]]>
+    </line>
+    <line>
+      <![CDATA[Total number of item and total price are correct!]]>
+    </line>
+    <line>
+      <![CDATA[Proceeding to checkout.]]>
+    </line>
+    <line>
+      <![CDATA[Checking if delivery details are correct.]]>
+    </line>
+    <line>
+      <![CDATA[All delivery information are correct.]]>
+    </line>
+    <line>
+      <![CDATA[Creating new account using random Email address: nfztbyjr@gmail.com]]>
+    </line>
+    <line>
+      <![CDATA[Accepting terms of services.]]>
+    </line>
+    <line>
+      <![CDATA[Proceeding to checkout.]]>
+    </line>
+    <line>
+      <![CDATA[Checking quantity and total price are still correct.]]>
+    </line>
+    <line>
+      <![CDATA[There is 1 item in cart.]]>
+    </line>
+    <line>
+      <![CDATA[Total price including shipping is $29.0.]]>
+    </line>
+    <line>
+      <![CDATA[Quantity and total price still correct.]]>
+    </line>
+    <line>
+      <![CDATA[Paying by bank wire.]]>
+    </line>
+    <line>
+      <![CDATA[Filling all information using data from CSV file.]]>
+    </line>
+    <line>
+      <![CDATA[Confirming order.]]>
+    </line>
+    <line>
+      <![CDATA[Checking if delivery details are correct.]]>
+    </line>
+    <line>
+      <![CDATA[Order is complete.]]>
+    </line>
+    <line>
+      <![CDATA[[RESULT: 'purchaseItem' has successfully passed.]]]>
+    </line>
+    <line>
+      <![CDATA[Closing browser.]]>
+    </line>
+    <line>
+      <![CDATA[All delivery information are correct.]]>
+    </line>
+    <line>
+      <![CDATA[Launching browser.]]>
+    </line>
+    <line>
+      <![CDATA[Create driver: chrome]]>
+    </line>
+    <line>
+      <![CDATA[Starting chrome browser.]]>
+    </line>
+    <line>
+      <![CDATA[Accepting terms of services.]]>
+    </line>
+    <line>
+      <![CDATA[Proceeding to checkout.]]>
+    </line>
+    <line>
+      <![CDATA[[Starting 'purchaseItem' test]]]>
+    </line>
+    <line>
+      <![CDATA[Starting test #3 from CSV file.]]>
+    </line>
+    <line>
+      <![CDATA[Opening page: http://automationpractice.com/index.php]]>
+    </line>
+    <line>
+      <![CDATA[Checking quantity and total price are still correct.]]>
+    </line>
+    <line>
+      <![CDATA[There is 1 item in cart.]]>
+    </line>
+    <line>
+      <![CDATA[Total price including shipping is $29.0.]]>
+    </line>
+    <line>
+      <![CDATA[Quantity and total price still correct.]]>
+    </line>
+    <line>
+      <![CDATA[Paying by bank wire.]]>
+    </line>
+    <line>
+      <![CDATA[Confirming order.]]>
+    </line>
+    <line>
+      <![CDATA[Page opened!]]>
+    </line>
+    <line>
+      <![CDATA[Searching for item: 'shoes'.]]>
+    </line>
+    <line>
+      <![CDATA[Order is complete.]]>
+    </line>
+    <line>
+      <![CDATA[[RESULT: 'purchaseItem' has successfully passed.]]]>
+    </line>
+    <line>
+      <![CDATA[Closing browser.]]>
+    </line>
+    <line>
+      <![CDATA[Launching browser.]]>
+    </line>
+    <line>
+      <![CDATA[Create driver: firefox]]>
+    </line>
+    <line>
+      <![CDATA[Starting firefox browser.]]>
+    </line>
+    <line>
+      <![CDATA[Selecting random item from the list.]]>
+    </line>
+    <line>
+      <![CDATA[Adding item into the cart.]]>
+    </line>
+    <line>
+      <![CDATA[Going to cart.]]>
+    </line>
+    <line>
+      <![CDATA[Checking if total number of item and total price are correct in cart.]]>
+    </line>
+    <line>
+      <![CDATA[There is 1 item in cart.]]>
     </line>
     <line>
       <![CDATA[Total price including shipping is $32.5]]>
@@ -83,13 +371,40 @@
       <![CDATA[Proceeding to checkout.]]>
     </line>
     <line>
+      <![CDATA[[Starting 'purchaseItem' test]]]>
+    </line>
+    <line>
+      <![CDATA[Starting test #3 from CSV file.]]>
+    </line>
+    <line>
+      <![CDATA[Opening page: http://automationpractice.com/index.php]]>
+    </line>
+    <line>
+      <![CDATA[Creating new account using random Email address: pdwxnuth@gmail.com]]>
+    </line>
+    <line>
+      <![CDATA[Page opened!]]>
+    </line>
+    <line>
+      <![CDATA[Searching for item: 'shoes'.]]>
+    </line>
+    <line>
+      <![CDATA[Filling all information using data from CSV file.]]>
+    </line>
+    <line>
+      <![CDATA[Selecting random item from the list.]]>
+    </line>
+    <line>
       <![CDATA[Adding item into the cart.]]>
     </line>
     <line>
       <![CDATA[Going to cart.]]>
     </line>
     <line>
-      <![CDATA[Creating new account using random Email address: vrbxrawo@gmail.com]]>
+      <![CDATA[Checking if delivery details are correct.]]>
+    </line>
+    <line>
+      <![CDATA[All delivery information are correct.]]>
     </line>
     <line>
       <![CDATA[Checking if total number of item and total price are correct in cart.]]>
@@ -98,37 +413,10 @@
       <![CDATA[There is 1 item in cart.]]>
     </line>
     <line>
-      <![CDATA[Total price including shipping is $18.4]]>
+      <![CDATA[Total price including shipping is $32.5]]>
     </line>
     <line>
       <![CDATA[Total number of item and total price are correct!]]>
-    </line>
-    <line>
-      <![CDATA[Proceeding to checkout.]]>
-    </line>
-    <line>
-      <![CDATA[Creating new account using random Email address: lnapgojy@gmail.com]]>
-    </line>
-    <line>
-      <![CDATA[Filling all information using data from CSV file.]]>
-    </line>
-    <line>
-      <![CDATA[Filling all information using data from CSV file.]]>
-    </line>
-    <line>
-      <![CDATA[Checking if delivery details are correct.]]>
-    </line>
-    <line>
-      <![CDATA[All delivery information are correct.]]>
-    </line>
-    <line>
-      <![CDATA[Checking if delivery details are correct.]]>
-    </line>
-    <line>
-      <![CDATA[All delivery information are correct.]]>
-    </line>
-    <line>
-      <![CDATA[Accepting terms of services.]]>
     </line>
     <line>
       <![CDATA[Proceeding to checkout.]]>
@@ -155,361 +443,7 @@
       <![CDATA[Paying by bank wire.]]>
     </line>
     <line>
-      <![CDATA[Checking quantity and total price are still correct.]]>
-    </line>
-    <line>
-      <![CDATA[There is 1 item in cart.]]>
-    </line>
-    <line>
-      <![CDATA[Total price including shipping is $18.4.]]>
-    </line>
-    <line>
-      <![CDATA[Quantity and total price still correct.]]>
-    </line>
-    <line>
-      <![CDATA[Paying by bank wire.]]>
-    </line>
-    <line>
-      <![CDATA[Confirming order.]]>
-    </line>
-    <line>
-      <![CDATA[Confirming order.]]>
-    </line>
-    <line>
-      <![CDATA[Order is complete.]]>
-    </line>
-    <line>
-      <![CDATA[[RESULT: 'purchaseItem' has successfully passed.]]]>
-    </line>
-    <line>
-      <![CDATA[Closing browser.]]>
-    </line>
-    <line>
-      <![CDATA[Order is complete.]]>
-    </line>
-    <line>
-      <![CDATA[[RESULT: 'purchaseItem' has successfully passed.]]]>
-    </line>
-    <line>
-      <![CDATA[Closing browser.]]>
-    </line>
-    <line>
-      <![CDATA[Launching browser.]]>
-    </line>
-    <line>
-      <![CDATA[Create driver: chrome]]>
-    </line>
-    <line>
-      <![CDATA[Starting chrome browser.]]>
-    </line>
-    <line>
-      <![CDATA[Launching browser.]]>
-    </line>
-    <line>
-      <![CDATA[Create driver: firefox]]>
-    </line>
-    <line>
-      <![CDATA[Starting firefox browser.]]>
-    </line>
-    <line>
-      <![CDATA[[Starting 'purchaseItem' test]]]>
-    </line>
-    <line>
-      <![CDATA[Starting test #2 from CSV file.]]>
-    </line>
-    <line>
-      <![CDATA[Opening page: http://automationpractice.com/index.php]]>
-    </line>
-    <line>
-      <![CDATA[Page opened!]]>
-    </line>
-    <line>
-      <![CDATA[Searching for item: 'blouse'.]]>
-    </line>
-    <line>
-      <![CDATA[[Starting 'purchaseItem' test]]]>
-    </line>
-    <line>
-      <![CDATA[Starting test #2 from CSV file.]]>
-    </line>
-    <line>
-      <![CDATA[Opening page: http://automationpractice.com/index.php]]>
-    </line>
-    <line>
-      <![CDATA[Selecting random item from the list.]]>
-    </line>
-    <line>
-      <![CDATA[Adding item into the cart.]]>
-    </line>
-    <line>
-      <![CDATA[Going to cart.]]>
-    </line>
-    <line>
-      <![CDATA[Page opened!]]>
-    </line>
-    <line>
-      <![CDATA[Searching for item: 'blouse'.]]>
-    </line>
-    <line>
-      <![CDATA[Checking if total number of item and total price are correct in cart.]]>
-    </line>
-    <line>
-      <![CDATA[There is 1 item in cart.]]>
-    </line>
-    <line>
-      <![CDATA[Total price including shipping is $29.0]]>
-    </line>
-    <line>
-      <![CDATA[Total number of item and total price are correct!]]>
-    </line>
-    <line>
-      <![CDATA[Proceeding to checkout.]]>
-    </line>
-    <line>
-      <![CDATA[Selecting random item from the list.]]>
-    </line>
-    <line>
-      <![CDATA[Adding item into the cart.]]>
-    </line>
-    <line>
-      <![CDATA[Going to cart.]]>
-    </line>
-    <line>
-      <![CDATA[Creating new account using random Email address: ghsazeuo@gmail.com]]>
-    </line>
-    <line>
-      <![CDATA[Checking if total number of item and total price are correct in cart.]]>
-    </line>
-    <line>
-      <![CDATA[There is 1 item in cart.]]>
-    </line>
-    <line>
-      <![CDATA[Total price including shipping is $29.0]]>
-    </line>
-    <line>
-      <![CDATA[Total number of item and total price are correct!]]>
-    </line>
-    <line>
-      <![CDATA[Proceeding to checkout.]]>
-    </line>
-    <line>
-      <![CDATA[Filling all information using data from CSV file.]]>
-    </line>
-    <line>
-      <![CDATA[Creating new account using random Email address: smdtsoqo@gmail.com]]>
-    </line>
-    <line>
-      <![CDATA[Checking if delivery details are correct.]]>
-    </line>
-    <line>
-      <![CDATA[All delivery information are correct.]]>
-    </line>
-    <line>
-      <![CDATA[Accepting terms of services.]]>
-    </line>
-    <line>
-      <![CDATA[Proceeding to checkout.]]>
-    </line>
-    <line>
-      <![CDATA[Filling all information using data from CSV file.]]>
-    </line>
-    <line>
-      <![CDATA[Checking quantity and total price are still correct.]]>
-    </line>
-    <line>
-      <![CDATA[There is 1 item in cart.]]>
-    </line>
-    <line>
-      <![CDATA[Total price including shipping is $29.0.]]>
-    </line>
-    <line>
-      <![CDATA[Quantity and total price still correct.]]>
-    </line>
-    <line>
-      <![CDATA[Paying by bank wire.]]>
-    </line>
-    <line>
-      <![CDATA[Checking if delivery details are correct.]]>
-    </line>
-    <line>
-      <![CDATA[All delivery information are correct.]]>
-    </line>
-    <line>
-      <![CDATA[Confirming order.]]>
-    </line>
-    <line>
-      <![CDATA[Accepting terms of services.]]>
-    </line>
-    <line>
-      <![CDATA[Proceeding to checkout.]]>
-    </line>
-    <line>
-      <![CDATA[Checking quantity and total price are still correct.]]>
-    </line>
-    <line>
-      <![CDATA[There is 1 item in cart.]]>
-    </line>
-    <line>
-      <![CDATA[Order is complete.]]>
-    </line>
-    <line>
-      <![CDATA[[RESULT: 'purchaseItem' has successfully passed.]]]>
-    </line>
-    <line>
-      <![CDATA[Closing browser.]]>
-    </line>
-    <line>
-      <![CDATA[Total price including shipping is $29.0.]]>
-    </line>
-    <line>
-      <![CDATA[Quantity and total price still correct.]]>
-    </line>
-    <line>
-      <![CDATA[Paying by bank wire.]]>
-    </line>
-    <line>
-      <![CDATA[Launching browser.]]>
-    </line>
-    <line>
-      <![CDATA[Create driver: chrome]]>
-    </line>
-    <line>
-      <![CDATA[Starting chrome browser.]]>
-    </line>
-    <line>
-      <![CDATA[Confirming order.]]>
-    </line>
-    <line>
-      <![CDATA[[Starting 'purchaseItem' test]]]>
-    </line>
-    <line>
-      <![CDATA[Starting test #3 from CSV file.]]>
-    </line>
-    <line>
-      <![CDATA[Opening page: http://automationpractice.com/index.php]]>
-    </line>
-    <line>
-      <![CDATA[Order is complete.]]>
-    </line>
-    <line>
-      <![CDATA[[RESULT: 'purchaseItem' has successfully passed.]]]>
-    </line>
-    <line>
-      <![CDATA[Closing browser.]]>
-    </line>
-    <line>
-      <![CDATA[Launching browser.]]>
-    </line>
-    <line>
-      <![CDATA[Create driver: firefox]]>
-    </line>
-    <line>
-      <![CDATA[Starting firefox browser.]]>
-    </line>
-    <line>
-      <![CDATA[Page opened!]]>
-    </line>
-    <line>
-      <![CDATA[Searching for item: 'shoes'.]]>
-    </line>
-    <line>
-      <![CDATA[Selecting random item from the list.]]>
-    </line>
-    <line>
-      <![CDATA[Adding item into the cart.]]>
-    </line>
-    <line>
-      <![CDATA[Going to cart.]]>
-    </line>
-    <line>
-      <![CDATA[[Starting 'purchaseItem' test]]]>
-    </line>
-    <line>
-      <![CDATA[Starting test #3 from CSV file.]]>
-    </line>
-    <line>
-      <![CDATA[Opening page: http://automationpractice.com/index.php]]>
-    </line>
-    <line>
-      <![CDATA[Checking if total number of item and total price are correct in cart.]]>
-    </line>
-    <line>
-      <![CDATA[There is 1 item in cart.]]>
-    </line>
-    <line>
-      <![CDATA[Total price including shipping is $30.98]]>
-    </line>
-    <line>
-      <![CDATA[Total number of item and total price are correct!]]>
-    </line>
-    <line>
-      <![CDATA[Proceeding to checkout.]]>
-    </line>
-    <line>
-      <![CDATA[Creating new account using random Email address: dgaygwjj@gmail.com]]>
-    </line>
-    <line>
-      <![CDATA[Page opened!]]>
-    </line>
-    <line>
-      <![CDATA[Searching for item: 'shoes'.]]>
-    </line>
-    <line>
-      <![CDATA[Selecting random item from the list.]]>
-    </line>
-    <line>
-      <![CDATA[Adding item into the cart.]]>
-    </line>
-    <line>
-      <![CDATA[Going to cart.]]>
-    </line>
-    <line>
-      <![CDATA[Filling all information using data from CSV file.]]>
-    </line>
-    <line>
-      <![CDATA[Checking if total number of item and total price are correct in cart.]]>
-    </line>
-    <line>
-      <![CDATA[There is 1 item in cart.]]>
-    </line>
-    <line>
-      <![CDATA[Total price including shipping is $18.4]]>
-    </line>
-    <line>
-      <![CDATA[Total number of item and total price are correct!]]>
-    </line>
-    <line>
-      <![CDATA[Proceeding to checkout.]]>
-    </line>
-    <line>
-      <![CDATA[Checking if delivery details are correct.]]>
-    </line>
-    <line>
-      <![CDATA[All delivery information are correct.]]>
-    </line>
-    <line>
-      <![CDATA[Creating new account using random Email address: ighwuyms@gmail.com]]>
-    </line>
-    <line>
-      <![CDATA[Accepting terms of services.]]>
-    </line>
-    <line>
-      <![CDATA[Proceeding to checkout.]]>
-    </line>
-    <line>
-      <![CDATA[Checking quantity and total price are still correct.]]>
-    </line>
-    <line>
-      <![CDATA[There is 1 item in cart.]]>
-    </line>
-    <line>
-      <![CDATA[Total price including shipping is $30.98.]]>
-    </line>
-    <line>
-      <![CDATA[Quantity and total price still correct.]]>
-    </line>
-    <line>
-      <![CDATA[Paying by bank wire.]]>
+      <![CDATA[Creating new account using random Email address: tqjhwgkt@gmail.com]]>
     </line>
     <line>
       <![CDATA[Confirming order.]]>
@@ -545,7 +479,7 @@
       <![CDATA[There is 1 item in cart.]]>
     </line>
     <line>
-      <![CDATA[Total price including shipping is $18.4.]]>
+      <![CDATA[Total price including shipping is $32.5.]]>
     </line>
     <line>
       <![CDATA[Quantity and total price still correct.]]>
@@ -566,12 +500,12 @@
       <![CDATA[Closing browser.]]>
     </line>
   </reporter-output>
-  <suite started-at="2021-04-26T15:37:30Z" name="ExerciseASuite.xml" finished-at="2021-04-26T15:39:05Z" duration-ms="94379">
+  <suite started-at="2021-05-06T18:01:14 CEST" name="ExerciseASuite.xml" finished-at="2021-05-06T18:02:55 CEST" duration-ms="101059">
     <groups>
     </groups>
-    <test started-at="2021-04-26T15:37:30Z" name="ExerciseAUsingChrome" finished-at="2021-04-26T15:38:58Z" duration-ms="88022">
+    <test started-at="2021-05-06T18:01:14 CEST" name="ExerciseAUsingChrome" finished-at="2021-05-06T18:02:43 CEST" duration-ms="89578">
       <class name="com.automationpractice.automationExercise.ExerciseA">
-        <test-method is-config="true" signature="setup(java.lang.reflect.Method, java.lang.String, org.testng.ITestContext)[pri:0, instance:com.automationpractice.automationExercise.ExerciseA@63070bab]" started-at="2021-04-26T15:37:30Z" name="setup" finished-at="2021-04-26T15:37:32Z" duration-ms="1970" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method,java.lang.String,org.testng.ITestContext)[pri:0, instance:com.automationpractice.automationExercise.ExerciseA@5fd4f8f5]" started-at="2021-05-06T18:01:14 CEST" name="setup" finished-at="2021-05-06T18:01:16 CEST" duration-ms="1917" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -585,7 +519,7 @@
             </param>
             <param index="2">
               <value>
-                <![CDATA[org.testng.TestRunner@3246fb96]]>
+                <![CDATA[org.testng.TestRunner@65c7a252]]>
               </value>
             </param>
           </params>
@@ -601,7 +535,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="purchaseItem(java.util.Map)[pri:0, instance:com.automationpractice.automationExercise.ExerciseA@63070bab]" started-at="2021-04-26T15:37:32Z" name="purchaseItem" data-provider="csvReader" finished-at="2021-04-26T15:38:06Z" duration-ms="33224" status="PASS">
+        <test-method signature="purchaseItem(java.util.Map)[pri:0, instance:com.automationpractice.automationExercise.ExerciseA@5fd4f8f5]" started-at="2021-05-06T18:01:16 CEST" name="purchaseItem" data-provider="csvReader" finished-at="2021-05-06T18:01:44 CEST" duration-ms="28061" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -609,6 +543,73 @@
               </value>
             </param>
           </params>
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for visibility of element located by By.id: customer_firstname (tried for 3 second(s) with 500 milliseconds interval)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.id: customer_firstname (tried for 3 second(s) with 500 milliseconds interval)
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+at com.automationpractice.pages.BasePageObject.waitFor(BasePageObject.java:100)
+at com.automationpractice.pages.BasePageObject.waitForVisibilityOf(BasePageObject.java:88)
+at com.automationpractice.pages.BasePageObject.type(BasePageObject.java:55)
+at com.automationpractice.pages.AccountCreationPageObject.typeFirstname(AccountCreationPageObject.java:48)
+at com.automationpractice.pages.AccountCreationPageObject.createNewAccount(AccountCreationPageObject.java:36)
+at com.automationpractice.automationExercise.ExerciseA.purchaseItem(ExerciseA.java:69)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#customer_firstname"}
+  (Session info: chrome=90.0.4430.93)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'MSI', ip: '192.168.1.40', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.93, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\Nico\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:52714}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 92dd1ed3e72233a3d2dfb77d9b65e10d
+*** Element info: {Using=id, value=customer_firstname}
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+at org.openqa.selenium.By$ById.findElement(By.java:188)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
+at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+... 29 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
           <reporter-output>
             <line>
               <![CDATA[[Starting 'purchaseItem' test]]]>
@@ -641,6 +642,253 @@
               <![CDATA[There is 1 item in cart.]]>
             </line>
             <line>
+              <![CDATA[Total price including shipping is $29.0]]>
+            </line>
+            <line>
+              <![CDATA[Total number of item and total price are correct!]]>
+            </line>
+            <line>
+              <![CDATA[Proceeding to checkout.]]>
+            </line>
+            <line>
+              <![CDATA[Creating new account using random Email address: exnruekz@gmail.com]]>
+            </line>
+            <line>
+              <![CDATA[[RESULT: 'purchaseItem' has failed. Taking screenshot!]]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- purchaseItem -->
+        <test-method is-config="true" signature="takeScreenshot(org.testng.ITestResult)[pri:0, instance:com.automationpractice.automationExercise.ExerciseA@5fd4f8f5]" started-at="2021-05-06T18:01:44 CEST" name="takeScreenshot" finished-at="2021-05-06T18:01:44 CEST" duration-ms="262" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=purchaseItem status=FAILURE method=ExerciseA.purchaseItem(java.util.Map)[pri:0, instance:com.automationpractice.automationExercise.ExerciseA@5fd4f8f5] output=[Starting 'purchaseItem' test]]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Screenshot available at C:\Users\Nico\eclipse-workspace\automation-exercise\test-output\screenshots\20210506\ExerciseASuite.xml\ExerciseAUsingChrome\purchaseItem\180144493 .png]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- takeScreenshot -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.automationpractice.automationExercise.ExerciseA@5fd4f8f5]" started-at="2021-05-06T18:01:44 CEST" name="tearDown" finished-at="2021-05-06T18:01:45 CEST" duration-ms="626" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Closing browser.]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method,java.lang.String,org.testng.ITestContext)[pri:0, instance:com.automationpractice.automationExercise.ExerciseA@5fd4f8f5]" started-at="2021-05-06T18:01:45 CEST" name="setup" finished-at="2021-05-06T18:01:46 CEST" duration-ms="1301" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.automationpractice.automationExercise.ExerciseA.purchaseItem(java.util.Map)]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[org.testng.TestRunner@65c7a252]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Launching browser.]]>
+            </line>
+            <line>
+              <![CDATA[Create driver: chrome]]>
+            </line>
+            <line>
+              <![CDATA[Starting chrome browser.]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="purchaseItem(java.util.Map)[pri:0, instance:com.automationpractice.automationExercise.ExerciseA@5fd4f8f5]" started-at="2021-05-06T18:01:46 CEST" name="purchaseItem" data-provider="csvReader" finished-at="2021-05-06T18:02:12 CEST" duration-ms="26085" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{firstName=nicolas, lastName=ma, zipCode=08001, password=secretPassword, address=8 baker street, phoneNumber=123456, testNumber=2, city=barcelona, aliasEmailAddress=anotherRandomEmail@gmail.com, itemToPurchase=blouse}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[[Starting 'purchaseItem' test]]]>
+            </line>
+            <line>
+              <![CDATA[Starting test #2 from CSV file.]]>
+            </line>
+            <line>
+              <![CDATA[Opening page: http://automationpractice.com/index.php]]>
+            </line>
+            <line>
+              <![CDATA[Page opened!]]>
+            </line>
+            <line>
+              <![CDATA[Searching for item: 'blouse'.]]>
+            </line>
+            <line>
+              <![CDATA[Selecting random item from the list.]]>
+            </line>
+            <line>
+              <![CDATA[Adding item into the cart.]]>
+            </line>
+            <line>
+              <![CDATA[Going to cart.]]>
+            </line>
+            <line>
+              <![CDATA[Checking if total number of item and total price are correct in cart.]]>
+            </line>
+            <line>
+              <![CDATA[There is 1 item in cart.]]>
+            </line>
+            <line>
+              <![CDATA[Total price including shipping is $29.0]]>
+            </line>
+            <line>
+              <![CDATA[Total number of item and total price are correct!]]>
+            </line>
+            <line>
+              <![CDATA[Proceeding to checkout.]]>
+            </line>
+            <line>
+              <![CDATA[Creating new account using random Email address: qhngsmso@gmail.com]]>
+            </line>
+            <line>
+              <![CDATA[Filling all information using data from CSV file.]]>
+            </line>
+            <line>
+              <![CDATA[Checking if delivery details are correct.]]>
+            </line>
+            <line>
+              <![CDATA[All delivery information are correct.]]>
+            </line>
+            <line>
+              <![CDATA[Accepting terms of services.]]>
+            </line>
+            <line>
+              <![CDATA[Proceeding to checkout.]]>
+            </line>
+            <line>
+              <![CDATA[Checking quantity and total price are still correct.]]>
+            </line>
+            <line>
+              <![CDATA[There is 1 item in cart.]]>
+            </line>
+            <line>
+              <![CDATA[Total price including shipping is $29.0.]]>
+            </line>
+            <line>
+              <![CDATA[Quantity and total price still correct.]]>
+            </line>
+            <line>
+              <![CDATA[Paying by bank wire.]]>
+            </line>
+            <line>
+              <![CDATA[Confirming order.]]>
+            </line>
+            <line>
+              <![CDATA[Order is complete.]]>
+            </line>
+            <line>
+              <![CDATA[[RESULT: 'purchaseItem' has successfully passed.]]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- purchaseItem -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.automationpractice.automationExercise.ExerciseA@5fd4f8f5]" started-at="2021-05-06T18:02:12 CEST" name="tearDown" finished-at="2021-05-06T18:02:13 CEST" duration-ms="667" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Closing browser.]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="takeScreenshot(org.testng.ITestResult)[pri:0, instance:com.automationpractice.automationExercise.ExerciseA@5fd4f8f5]" started-at="2021-05-06T18:02:12 CEST" name="takeScreenshot" finished-at="2021-05-06T18:02:12 CEST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=purchaseItem status=SUCCESS method=ExerciseA.purchaseItem(java.util.Map)[pri:0, instance:com.automationpractice.automationExercise.ExerciseA@5fd4f8f5] output=[Starting 'purchaseItem' test]]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenshot -->
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method,java.lang.String,org.testng.ITestContext)[pri:0, instance:com.automationpractice.automationExercise.ExerciseA@5fd4f8f5]" started-at="2021-05-06T18:02:13 CEST" name="setup" finished-at="2021-05-06T18:02:14 CEST" duration-ms="1297" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.automationpractice.automationExercise.ExerciseA.purchaseItem(java.util.Map)]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[org.testng.TestRunner@65c7a252]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Launching browser.]]>
+            </line>
+            <line>
+              <![CDATA[Create driver: chrome]]>
+            </line>
+            <line>
+              <![CDATA[Starting chrome browser.]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="purchaseItem(java.util.Map)[pri:0, instance:com.automationpractice.automationExercise.ExerciseA@5fd4f8f5]" started-at="2021-05-06T18:02:14 CEST" name="purchaseItem" data-provider="csvReader" finished-at="2021-05-06T18:02:43 CEST" duration-ms="28628" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{firstName=john, lastName=smith, zipCode=08022, password=secretPassword, address=25 rambla cataluna, phoneNumber=425684, testNumber=3, city=Barcelona, aliasEmailAddress=aliasemail@gmail.com, itemToPurchase=shoes}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[[Starting 'purchaseItem' test]]]>
+            </line>
+            <line>
+              <![CDATA[Starting test #3 from CSV file.]]>
+            </line>
+            <line>
+              <![CDATA[Opening page: http://automationpractice.com/index.php]]>
+            </line>
+            <line>
+              <![CDATA[Page opened!]]>
+            </line>
+            <line>
+              <![CDATA[Searching for item: 'shoes'.]]>
+            </line>
+            <line>
+              <![CDATA[Selecting random item from the list.]]>
+            </line>
+            <line>
+              <![CDATA[Adding item into the cart.]]>
+            </line>
+            <line>
+              <![CDATA[Going to cart.]]>
+            </line>
+            <line>
+              <![CDATA[Checking if total number of item and total price are correct in cart.]]>
+            </line>
+            <line>
+              <![CDATA[There is 1 item in cart.]]>
+            </line>
+            <line>
               <![CDATA[Total price including shipping is $32.5]]>
             </line>
             <line>
@@ -650,7 +898,7 @@
               <![CDATA[Proceeding to checkout.]]>
             </line>
             <line>
-              <![CDATA[Creating new account using random Email address: vrbxrawo@gmail.com]]>
+              <![CDATA[Creating new account using random Email address: pdwxnuth@gmail.com]]>
             </line>
             <line>
               <![CDATA[Filling all information using data from CSV file.]]>
@@ -693,298 +941,18 @@
             </line>
           </reporter-output>
         </test-method> <!-- purchaseItem -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.automationpractice.automationExercise.ExerciseA@63070bab]" started-at="2021-04-26T15:38:06Z" name="tearDown" finished-at="2021-04-26T15:38:06Z" duration-ms="660" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.automationpractice.automationExercise.ExerciseA@5fd4f8f5]" started-at="2021-05-06T18:02:43 CEST" name="tearDown" finished-at="2021-05-06T18:02:43 CEST" duration-ms="635" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Closing browser.]]>
             </line>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="takeScreenshot(org.testng.ITestResult)[pri:0, instance:com.automationpractice.automationExercise.ExerciseA@63070bab]" started-at="2021-04-26T15:38:06Z" name="takeScreenshot" finished-at="2021-04-26T15:38:06Z" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="takeScreenshot(org.testng.ITestResult)[pri:0, instance:com.automationpractice.automationExercise.ExerciseA@5fd4f8f5]" started-at="2021-05-06T18:02:43 CEST" name="takeScreenshot" finished-at="2021-05-06T18:02:43 CEST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=purchaseItem status=SUCCESS method=ExerciseA.purchaseItem(java.util.Map)[pri:0, instance:com.automationpractice.automationExercise.ExerciseA@63070bab] output=[Starting 'purchaseItem' test]]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- takeScreenshot -->
-        <test-method is-config="true" signature="setup(java.lang.reflect.Method, java.lang.String, org.testng.ITestContext)[pri:0, instance:com.automationpractice.automationExercise.ExerciseA@63070bab]" started-at="2021-04-26T15:38:06Z" name="setup" finished-at="2021-04-26T15:38:07Z" duration-ms="1283" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.automationpractice.automationExercise.ExerciseA.purchaseItem(java.util.Map)]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[org.testng.TestRunner@3246fb96]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[Launching browser.]]>
-            </line>
-            <line>
-              <![CDATA[Create driver: chrome]]>
-            </line>
-            <line>
-              <![CDATA[Starting chrome browser.]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="purchaseItem(java.util.Map)[pri:0, instance:com.automationpractice.automationExercise.ExerciseA@63070bab]" started-at="2021-04-26T15:38:07Z" name="purchaseItem" data-provider="csvReader" finished-at="2021-04-26T15:38:33Z" duration-ms="25668" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{firstName=nicolas, lastName=ma, zipCode=08001, password=secretPassword, address=8 baker street, phoneNumber=123456, testNumber=2, city=barcelona, aliasEmailAddress=anotherRandomEmail@gmail.com, itemToPurchase=blouse}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[[Starting 'purchaseItem' test]]]>
-            </line>
-            <line>
-              <![CDATA[Starting test #2 from CSV file.]]>
-            </line>
-            <line>
-              <![CDATA[Opening page: http://automationpractice.com/index.php]]>
-            </line>
-            <line>
-              <![CDATA[Page opened!]]>
-            </line>
-            <line>
-              <![CDATA[Searching for item: 'blouse'.]]>
-            </line>
-            <line>
-              <![CDATA[Selecting random item from the list.]]>
-            </line>
-            <line>
-              <![CDATA[Adding item into the cart.]]>
-            </line>
-            <line>
-              <![CDATA[Going to cart.]]>
-            </line>
-            <line>
-              <![CDATA[Checking if total number of item and total price are correct in cart.]]>
-            </line>
-            <line>
-              <![CDATA[There is 1 item in cart.]]>
-            </line>
-            <line>
-              <![CDATA[Total price including shipping is $29.0]]>
-            </line>
-            <line>
-              <![CDATA[Total number of item and total price are correct!]]>
-            </line>
-            <line>
-              <![CDATA[Proceeding to checkout.]]>
-            </line>
-            <line>
-              <![CDATA[Creating new account using random Email address: ghsazeuo@gmail.com]]>
-            </line>
-            <line>
-              <![CDATA[Filling all information using data from CSV file.]]>
-            </line>
-            <line>
-              <![CDATA[Checking if delivery details are correct.]]>
-            </line>
-            <line>
-              <![CDATA[All delivery information are correct.]]>
-            </line>
-            <line>
-              <![CDATA[Accepting terms of services.]]>
-            </line>
-            <line>
-              <![CDATA[Proceeding to checkout.]]>
-            </line>
-            <line>
-              <![CDATA[Checking quantity and total price are still correct.]]>
-            </line>
-            <line>
-              <![CDATA[There is 1 item in cart.]]>
-            </line>
-            <line>
-              <![CDATA[Total price including shipping is $29.0.]]>
-            </line>
-            <line>
-              <![CDATA[Quantity and total price still correct.]]>
-            </line>
-            <line>
-              <![CDATA[Paying by bank wire.]]>
-            </line>
-            <line>
-              <![CDATA[Confirming order.]]>
-            </line>
-            <line>
-              <![CDATA[Order is complete.]]>
-            </line>
-            <line>
-              <![CDATA[[RESULT: 'purchaseItem' has successfully passed.]]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- purchaseItem -->
-        <test-method is-config="true" signature="takeScreenshot(org.testng.ITestResult)[pri:0, instance:com.automationpractice.automationExercise.ExerciseA@63070bab]" started-at="2021-04-26T15:38:33Z" name="takeScreenshot" finished-at="2021-04-26T15:38:33Z" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=purchaseItem status=SUCCESS method=ExerciseA.purchaseItem(java.util.Map)[pri:0, instance:com.automationpractice.automationExercise.ExerciseA@63070bab] output=[Starting 'purchaseItem' test]]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- takeScreenshot -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.automationpractice.automationExercise.ExerciseA@63070bab]" started-at="2021-04-26T15:38:33Z" name="tearDown" finished-at="2021-04-26T15:38:34Z" duration-ms="652" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[Closing browser.]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup(java.lang.reflect.Method, java.lang.String, org.testng.ITestContext)[pri:0, instance:com.automationpractice.automationExercise.ExerciseA@63070bab]" started-at="2021-04-26T15:38:34Z" name="setup" finished-at="2021-04-26T15:38:35Z" duration-ms="1307" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.automationpractice.automationExercise.ExerciseA.purchaseItem(java.util.Map)]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[org.testng.TestRunner@3246fb96]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[Launching browser.]]>
-            </line>
-            <line>
-              <![CDATA[Create driver: chrome]]>
-            </line>
-            <line>
-              <![CDATA[Starting chrome browser.]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="purchaseItem(java.util.Map)[pri:0, instance:com.automationpractice.automationExercise.ExerciseA@63070bab]" started-at="2021-04-26T15:38:35Z" name="purchaseItem" data-provider="csvReader" finished-at="2021-04-26T15:38:58Z" duration-ms="22545" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{firstName=john, lastName=smith, zipCode=08022, password=secretPassword, address=25 rambla cataluna, phoneNumber=425684, testNumber=3, city=Barcelona, aliasEmailAddress=aliasemail@gmail.com, itemToPurchase=shoes}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[[Starting 'purchaseItem' test]]]>
-            </line>
-            <line>
-              <![CDATA[Starting test #3 from CSV file.]]>
-            </line>
-            <line>
-              <![CDATA[Opening page: http://automationpractice.com/index.php]]>
-            </line>
-            <line>
-              <![CDATA[Page opened!]]>
-            </line>
-            <line>
-              <![CDATA[Searching for item: 'shoes'.]]>
-            </line>
-            <line>
-              <![CDATA[Selecting random item from the list.]]>
-            </line>
-            <line>
-              <![CDATA[Adding item into the cart.]]>
-            </line>
-            <line>
-              <![CDATA[Going to cart.]]>
-            </line>
-            <line>
-              <![CDATA[Checking if total number of item and total price are correct in cart.]]>
-            </line>
-            <line>
-              <![CDATA[There is 1 item in cart.]]>
-            </line>
-            <line>
-              <![CDATA[Total price including shipping is $30.98]]>
-            </line>
-            <line>
-              <![CDATA[Total number of item and total price are correct!]]>
-            </line>
-            <line>
-              <![CDATA[Proceeding to checkout.]]>
-            </line>
-            <line>
-              <![CDATA[Creating new account using random Email address: dgaygwjj@gmail.com]]>
-            </line>
-            <line>
-              <![CDATA[Filling all information using data from CSV file.]]>
-            </line>
-            <line>
-              <![CDATA[Checking if delivery details are correct.]]>
-            </line>
-            <line>
-              <![CDATA[All delivery information are correct.]]>
-            </line>
-            <line>
-              <![CDATA[Accepting terms of services.]]>
-            </line>
-            <line>
-              <![CDATA[Proceeding to checkout.]]>
-            </line>
-            <line>
-              <![CDATA[Checking quantity and total price are still correct.]]>
-            </line>
-            <line>
-              <![CDATA[There is 1 item in cart.]]>
-            </line>
-            <line>
-              <![CDATA[Total price including shipping is $30.98.]]>
-            </line>
-            <line>
-              <![CDATA[Quantity and total price still correct.]]>
-            </line>
-            <line>
-              <![CDATA[Paying by bank wire.]]>
-            </line>
-            <line>
-              <![CDATA[Confirming order.]]>
-            </line>
-            <line>
-              <![CDATA[Order is complete.]]>
-            </line>
-            <line>
-              <![CDATA[[RESULT: 'purchaseItem' has successfully passed.]]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- purchaseItem -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.automationpractice.automationExercise.ExerciseA@63070bab]" started-at="2021-04-26T15:38:58Z" name="tearDown" finished-at="2021-04-26T15:38:58Z" duration-ms="653" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[Closing browser.]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="takeScreenshot(org.testng.ITestResult)[pri:0, instance:com.automationpractice.automationExercise.ExerciseA@63070bab]" started-at="2021-04-26T15:38:58Z" name="takeScreenshot" finished-at="2021-04-26T15:38:58Z" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=purchaseItem status=SUCCESS method=ExerciseA.purchaseItem(java.util.Map)[pri:0, instance:com.automationpractice.automationExercise.ExerciseA@63070bab] output=[Starting 'purchaseItem' test]]]]>
+                <![CDATA[[TestResult name=purchaseItem status=SUCCESS method=ExerciseA.purchaseItem(java.util.Map)[pri:0, instance:com.automationpractice.automationExercise.ExerciseA@5fd4f8f5] output=[Starting 'purchaseItem' test]]]]>
               </value>
             </param>
           </params>
@@ -993,9 +961,9 @@
         </test-method> <!-- takeScreenshot -->
       </class> <!-- com.automationpractice.automationExercise.ExerciseA -->
     </test> <!-- ExerciseAUsingChrome -->
-    <test started-at="2021-04-26T15:37:30Z" name="ExerciseAUsingFirefox" finished-at="2021-04-26T15:39:05Z" duration-ms="94379">
+    <test started-at="2021-05-06T18:01:14 CEST" name="ExerciseAUsingFirefox" finished-at="2021-05-06T18:02:55 CEST" duration-ms="101059">
       <class name="com.automationpractice.automationExercise.ExerciseA">
-        <test-method is-config="true" signature="setup(java.lang.reflect.Method, java.lang.String, org.testng.ITestContext)[pri:0, instance:com.automationpractice.automationExercise.ExerciseA@55740540]" started-at="2021-04-26T15:37:30Z" name="setup" finished-at="2021-04-26T15:37:36Z" duration-ms="5537" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method,java.lang.String,org.testng.ITestContext)[pri:0, instance:com.automationpractice.automationExercise.ExerciseA@25fb8912]" started-at="2021-05-06T18:01:14 CEST" name="setup" finished-at="2021-05-06T18:01:19 CEST" duration-ms="5084" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1009,7 +977,7 @@
             </param>
             <param index="2">
               <value>
-                <![CDATA[org.testng.TestRunner@2e222612]]>
+                <![CDATA[org.testng.TestRunner@1e0b4072]]>
               </value>
             </param>
           </params>
@@ -1025,7 +993,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="purchaseItem(java.util.Map)[pri:0, instance:com.automationpractice.automationExercise.ExerciseA@55740540]" started-at="2021-04-26T15:37:36Z" name="purchaseItem" data-provider="csvReader" finished-at="2021-04-26T15:38:06Z" duration-ms="29894" status="PASS">
+        <test-method signature="purchaseItem(java.util.Map)[pri:0, instance:com.automationpractice.automationExercise.ExerciseA@25fb8912]" started-at="2021-05-06T18:01:19 CEST" name="purchaseItem" data-provider="csvReader" finished-at="2021-05-06T18:01:50 CEST" duration-ms="30909" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -1033,6 +1001,71 @@
               </value>
             </param>
           </params>
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for visibility of element located by By.id: customer_firstname (tried for 3 second(s) with 500 milliseconds interval)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.id: customer_firstname (tried for 3 second(s) with 500 milliseconds interval)
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+at com.automationpractice.pages.BasePageObject.waitFor(BasePageObject.java:100)
+at com.automationpractice.pages.BasePageObject.waitForVisibilityOf(BasePageObject.java:88)
+at com.automationpractice.pages.BasePageObject.type(BasePageObject.java:55)
+at com.automationpractice.pages.AccountCreationPageObject.typeFirstname(AccountCreationPageObject.java:48)
+at com.automationpractice.pages.AccountCreationPageObject.createNewAccount(AccountCreationPageObject.java:36)
+at com.automationpractice.automationExercise.ExerciseA.purchaseItem(ExerciseA.java:69)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: #customer_firstname
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'MSI', ip: '192.168.1.40', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.6'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 87.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210318103112, moz:geckodriverVersion: 0.29.0, moz:headless: false, moz:processID: 6224, moz:profile: C:\Users\Nico\AppData\Local..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: f5795359-8f2e-4963-9ee6-fedfb71d03c0
+*** Element info: {Using=id, value=customer_firstname}
+at jdk.internal.reflect.GeneratedConstructorAccessor11.newInstance(Unknown Source)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+at org.openqa.selenium.By$ById.findElement(By.java:188)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
+at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+... 29 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
           <reporter-output>
             <line>
               <![CDATA[[Starting 'purchaseItem' test]]]>
@@ -1065,7 +1098,7 @@
               <![CDATA[There is 1 item in cart.]]>
             </line>
             <line>
-              <![CDATA[Total price including shipping is $18.4]]>
+              <![CDATA[Total price including shipping is $28.0]]>
             </line>
             <line>
               <![CDATA[Total number of item and total price are correct!]]>
@@ -1074,68 +1107,35 @@
               <![CDATA[Proceeding to checkout.]]>
             </line>
             <line>
-              <![CDATA[Creating new account using random Email address: lnapgojy@gmail.com]]>
+              <![CDATA[Creating new account using random Email address: ophokwqw@gmail.com]]>
             </line>
             <line>
-              <![CDATA[Filling all information using data from CSV file.]]>
-            </line>
-            <line>
-              <![CDATA[Checking if delivery details are correct.]]>
-            </line>
-            <line>
-              <![CDATA[All delivery information are correct.]]>
-            </line>
-            <line>
-              <![CDATA[Accepting terms of services.]]>
-            </line>
-            <line>
-              <![CDATA[Proceeding to checkout.]]>
-            </line>
-            <line>
-              <![CDATA[Checking quantity and total price are still correct.]]>
-            </line>
-            <line>
-              <![CDATA[There is 1 item in cart.]]>
-            </line>
-            <line>
-              <![CDATA[Total price including shipping is $18.4.]]>
-            </line>
-            <line>
-              <![CDATA[Quantity and total price still correct.]]>
-            </line>
-            <line>
-              <![CDATA[Paying by bank wire.]]>
-            </line>
-            <line>
-              <![CDATA[Confirming order.]]>
-            </line>
-            <line>
-              <![CDATA[Order is complete.]]>
-            </line>
-            <line>
-              <![CDATA[[RESULT: 'purchaseItem' has successfully passed.]]]>
+              <![CDATA[[RESULT: 'purchaseItem' has failed. Taking screenshot!]]]>
             </line>
           </reporter-output>
         </test-method> <!-- purchaseItem -->
-        <test-method is-config="true" signature="takeScreenshot(org.testng.ITestResult)[pri:0, instance:com.automationpractice.automationExercise.ExerciseA@55740540]" started-at="2021-04-26T15:38:06Z" name="takeScreenshot" finished-at="2021-04-26T15:38:06Z" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="takeScreenshot(org.testng.ITestResult)[pri:0, instance:com.automationpractice.automationExercise.ExerciseA@25fb8912]" started-at="2021-05-06T18:01:50 CEST" name="takeScreenshot" finished-at="2021-05-06T18:01:50 CEST" duration-ms="149" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=purchaseItem status=SUCCESS method=ExerciseA.purchaseItem(java.util.Map)[pri:0, instance:com.automationpractice.automationExercise.ExerciseA@55740540] output=[Starting 'purchaseItem' test]]]]>
+                <![CDATA[[TestResult name=purchaseItem status=FAILURE method=ExerciseA.purchaseItem(java.util.Map)[pri:0, instance:com.automationpractice.automationExercise.ExerciseA@25fb8912] output=[Starting 'purchaseItem' test]]]]>
               </value>
             </param>
           </params>
           <reporter-output>
+            <line>
+              <![CDATA[Screenshot available at C:\Users\Nico\eclipse-workspace\automation-exercise\test-output\screenshots\20210506\ExerciseASuite.xml\ExerciseAUsingFirefox\purchaseItem\180150395 .png]]>
+            </line>
           </reporter-output>
         </test-method> <!-- takeScreenshot -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.automationpractice.automationExercise.ExerciseA@55740540]" started-at="2021-04-26T15:38:06Z" name="tearDown" finished-at="2021-04-26T15:38:07Z" duration-ms="889" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.automationpractice.automationExercise.ExerciseA@25fb8912]" started-at="2021-05-06T18:01:50 CEST" name="tearDown" finished-at="2021-05-06T18:01:51 CEST" duration-ms="856" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Closing browser.]]>
             </line>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup(java.lang.reflect.Method, java.lang.String, org.testng.ITestContext)[pri:0, instance:com.automationpractice.automationExercise.ExerciseA@55740540]" started-at="2021-04-26T15:38:07Z" name="setup" finished-at="2021-04-26T15:38:11Z" duration-ms="4540" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method,java.lang.String,org.testng.ITestContext)[pri:0, instance:com.automationpractice.automationExercise.ExerciseA@25fb8912]" started-at="2021-05-06T18:01:51 CEST" name="setup" finished-at="2021-05-06T18:01:55 CEST" duration-ms="4573" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1149,7 +1149,7 @@
             </param>
             <param index="2">
               <value>
-                <![CDATA[org.testng.TestRunner@2e222612]]>
+                <![CDATA[org.testng.TestRunner@1e0b4072]]>
               </value>
             </param>
           </params>
@@ -1165,7 +1165,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="purchaseItem(java.util.Map)[pri:0, instance:com.automationpractice.automationExercise.ExerciseA@55740540]" started-at="2021-04-26T15:38:11Z" name="purchaseItem" data-provider="csvReader" finished-at="2021-04-26T15:38:37Z" duration-ms="26237" status="PASS">
+        <test-method signature="purchaseItem(java.util.Map)[pri:0, instance:com.automationpractice.automationExercise.ExerciseA@25fb8912]" started-at="2021-05-06T18:01:55 CEST" name="purchaseItem" data-provider="csvReader" finished-at="2021-05-06T18:02:19 CEST" duration-ms="23228" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1214,7 +1214,7 @@
               <![CDATA[Proceeding to checkout.]]>
             </line>
             <line>
-              <![CDATA[Creating new account using random Email address: smdtsoqo@gmail.com]]>
+              <![CDATA[Creating new account using random Email address: nfztbyjr@gmail.com]]>
             </line>
             <line>
               <![CDATA[Filling all information using data from CSV file.]]>
@@ -1257,25 +1257,25 @@
             </line>
           </reporter-output>
         </test-method> <!-- purchaseItem -->
-        <test-method is-config="true" signature="takeScreenshot(org.testng.ITestResult)[pri:0, instance:com.automationpractice.automationExercise.ExerciseA@55740540]" started-at="2021-04-26T15:38:37Z" name="takeScreenshot" finished-at="2021-04-26T15:38:37Z" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="takeScreenshot(org.testng.ITestResult)[pri:0, instance:com.automationpractice.automationExercise.ExerciseA@25fb8912]" started-at="2021-05-06T18:02:19 CEST" name="takeScreenshot" finished-at="2021-05-06T18:02:19 CEST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=purchaseItem status=SUCCESS method=ExerciseA.purchaseItem(java.util.Map)[pri:0, instance:com.automationpractice.automationExercise.ExerciseA@55740540] output=[Starting 'purchaseItem' test]]]]>
+                <![CDATA[[TestResult name=purchaseItem status=SUCCESS method=ExerciseA.purchaseItem(java.util.Map)[pri:0, instance:com.automationpractice.automationExercise.ExerciseA@25fb8912] output=[Starting 'purchaseItem' test]]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenshot -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.automationpractice.automationExercise.ExerciseA@55740540]" started-at="2021-04-26T15:38:37Z" name="tearDown" finished-at="2021-04-26T15:38:38Z" duration-ms="848" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.automationpractice.automationExercise.ExerciseA@25fb8912]" started-at="2021-05-06T18:02:19 CEST" name="tearDown" finished-at="2021-05-06T18:02:19 CEST" duration-ms="763" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Closing browser.]]>
             </line>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup(java.lang.reflect.Method, java.lang.String, org.testng.ITestContext)[pri:0, instance:com.automationpractice.automationExercise.ExerciseA@55740540]" started-at="2021-04-26T15:38:38Z" name="setup" finished-at="2021-04-26T15:38:43Z" duration-ms="4524" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method,java.lang.String,org.testng.ITestContext)[pri:0, instance:com.automationpractice.automationExercise.ExerciseA@25fb8912]" started-at="2021-05-06T18:02:19 CEST" name="setup" finished-at="2021-05-06T18:02:24 CEST" duration-ms="4536" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1289,7 +1289,7 @@
             </param>
             <param index="2">
               <value>
-                <![CDATA[org.testng.TestRunner@2e222612]]>
+                <![CDATA[org.testng.TestRunner@1e0b4072]]>
               </value>
             </param>
           </params>
@@ -1305,7 +1305,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="purchaseItem(java.util.Map)[pri:0, instance:com.automationpractice.automationExercise.ExerciseA@55740540]" started-at="2021-04-26T15:38:43Z" name="purchaseItem" data-provider="csvReader" finished-at="2021-04-26T15:39:04Z" duration-ms="20963" status="PASS">
+        <test-method signature="purchaseItem(java.util.Map)[pri:0, instance:com.automationpractice.automationExercise.ExerciseA@25fb8912]" started-at="2021-05-06T18:02:24 CEST" name="purchaseItem" data-provider="csvReader" finished-at="2021-05-06T18:02:54 CEST" duration-ms="30074" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1345,7 +1345,7 @@
               <![CDATA[There is 1 item in cart.]]>
             </line>
             <line>
-              <![CDATA[Total price including shipping is $18.4]]>
+              <![CDATA[Total price including shipping is $32.5]]>
             </line>
             <line>
               <![CDATA[Total number of item and total price are correct!]]>
@@ -1354,7 +1354,7 @@
               <![CDATA[Proceeding to checkout.]]>
             </line>
             <line>
-              <![CDATA[Creating new account using random Email address: ighwuyms@gmail.com]]>
+              <![CDATA[Creating new account using random Email address: tqjhwgkt@gmail.com]]>
             </line>
             <line>
               <![CDATA[Filling all information using data from CSV file.]]>
@@ -1378,7 +1378,7 @@
               <![CDATA[There is 1 item in cart.]]>
             </line>
             <line>
-              <![CDATA[Total price including shipping is $18.4.]]>
+              <![CDATA[Total price including shipping is $32.5.]]>
             </line>
             <line>
               <![CDATA[Quantity and total price still correct.]]>
@@ -1397,24 +1397,24 @@
             </line>
           </reporter-output>
         </test-method> <!-- purchaseItem -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.automationpractice.automationExercise.ExerciseA@55740540]" started-at="2021-04-26T15:39:04Z" name="tearDown" finished-at="2021-04-26T15:39:05Z" duration-ms="888" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[Closing browser.]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="takeScreenshot(org.testng.ITestResult)[pri:0, instance:com.automationpractice.automationExercise.ExerciseA@55740540]" started-at="2021-04-26T15:39:04Z" name="takeScreenshot" finished-at="2021-04-26T15:39:04Z" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="takeScreenshot(org.testng.ITestResult)[pri:0, instance:com.automationpractice.automationExercise.ExerciseA@25fb8912]" started-at="2021-05-06T18:02:54 CEST" name="takeScreenshot" finished-at="2021-05-06T18:02:54 CEST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=purchaseItem status=SUCCESS method=ExerciseA.purchaseItem(java.util.Map)[pri:0, instance:com.automationpractice.automationExercise.ExerciseA@55740540] output=[Starting 'purchaseItem' test]]]]>
+                <![CDATA[[TestResult name=purchaseItem status=SUCCESS method=ExerciseA.purchaseItem(java.util.Map)[pri:0, instance:com.automationpractice.automationExercise.ExerciseA@25fb8912] output=[Starting 'purchaseItem' test]]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenshot -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.automationpractice.automationExercise.ExerciseA@25fb8912]" started-at="2021-05-06T18:02:54 CEST" name="tearDown" finished-at="2021-05-06T18:02:55 CEST" duration-ms="796" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Closing browser.]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
       </class> <!-- com.automationpractice.automationExercise.ExerciseA -->
     </test> <!-- ExerciseAUsingFirefox -->
   </suite> <!-- ExerciseASuite.xml -->
